@@ -8,5 +8,8 @@ NOTE:
 Tidak perlu di migrate
 
 namun seandainya code terdapat error karena tidak sesuai dengan database, dapat melakukan
+- php artisan migrate
+
+untuk run 
 - php artisan serve
 
