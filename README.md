@@ -6,10 +6,7 @@ Instalasi
 - php artisan key:generate
 NOTE:
 Tidak perlu di migrate
-
-namun seandainya code terdapat error karena tidak sesuai dengan database, dapat melakukan
-- php artisan migrate
-
+Databasenya terdapat di folder bernama caldera-sibisa-db
 untuk run 
 - php artisan serve
 
