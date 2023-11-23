@@ -1,3 +1,4 @@
+
 # Caldera-Toba-Testing
 Instalasi 
 - PHP yang di perbolehkan adalah versi php 8 ke atas dan menggunakan laravel 9.
@@ -5,8 +6,8 @@ Instalasi
 - composer install
 - php artisan key:generate
 NOTE:
-Tidak perlu di migrate
-Databasenya terdapat di folder bernama caldera-sibisa-db
+-Tidak perlu di migrate
+-Databasenya terdapat di folder bernama caldera-sibisa-db
 untuk run 
 - php artisan serve
 
