@@ -1,8 +1,7 @@
 import axios from 'axios';
 import assert from 'assert';
 
-//get data
-
+// Get data
 describe('API Test', () => {
   beforeEach(function () {
     this.timeout(5000);
@@ -11,7 +10,6 @@ describe('API Test', () => {
   it('should return status code 200', async function () {
     try {
       const response = await axios.get('http://localhost:3005/api/readtiket');
-
       assert.strictEqual(response.status, 200);
       console.log('Response Data:', response.data);
     } catch (error) {
@@ -20,18 +18,15 @@ describe('API Test', () => {
   });
 });
 
-
-// //create data
-
-
+// Create data
 describe('Create Tiket API Test', () => {
   it('should create an article and return status code 200', async () => {
     // Define the data to be sent in the POST request
     const postData = {
-        gambar_tiket: 'Tiket contoh.jpg',
-        jenis_tiket: 'contoh jenis tiket',
-        harga: 'contoh harga',
-        keterangan: 'Sample keterangan',
+      gambar_tiket: 'Tiket contoh.jpg',
+      jenis_tiket: 'contoh jenis tiket',
+      harga: 'contoh harga',
+      keterangan: 'Sample keterangan',
     };
 
     // Make the POST request
@@ -50,8 +45,7 @@ describe('Create Tiket API Test', () => {
   });
 });
 
-//update data (masih error)
-
+// Update data (fixing the error)
 describe('Update Artikel API Test', () => {
   it('should update an article and return status code 200', async () => {
     // Assume you have an existing article with an ID that you want to update
@@ -66,12 +60,12 @@ describe('Update Artikel API Test', () => {
 
     // Make the PUT request to update the article
     try {
-      const response = await axios.put(http://localhost:3005/api/updateartikel/${articleIdToUpdate}, updateData);
+      const response = await axios.put(`http://localhost:3005/api/updateartikel/${articleIdToUpdate}`, updateData);
 
       // Assertions
       assert.strictEqual(response.status, 200);
-assert.ok(response.data); // Check if response.data is truthy
-assert.strictEqual(response.data.id, 11); // Adjust based on the actual structure of the response
+      assert.ok(response.data); // Check if response.data is truthy
+      assert.strictEqual(response.data.id, 11); // Adjust based on the actual structure of the response
       console.log('Article updated successfully:', response.data);
     } catch (error) {
       console.error('Error updating article:', error.message);
@@ -80,8 +74,7 @@ assert.strictEqual(response.data.id, 11); // Adjust based on the actual structur
   });
 });
 
-
-//delete data
+// Delete data
 describe('Delete Tiket API Test', () => {
   it('should delete an article and return status code 200', async () => {
     // Assume you have a test article ID, replace it with an actual ID from your database
