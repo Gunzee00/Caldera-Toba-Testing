@@ -8,7 +8,7 @@ Pada repositori ini terdapat 3 folder
 ----------------------------------------------------------------------------------------------------------------------------------
 Instalasi untuk folder api
 - node js yang digunakan adalah versi 20 atau sejenisnya
-- import database mysqlnya bernama api_ppl
+- import database mysqlnya bernama api_ppl (Databasenya berada pada folder api)
 - untuk run port api command yang digunakan=  npm run start
 
 ----------------------------------------------------------------------------------------------------------------------------------
