@@ -43,7 +43,7 @@ app.post('/api/createartikel', (req, res) => {
 
   //update
   app.put('/api/updateartikel/:id', (req, res) => {
-    const articleId = req.params.id_artikel;
+    const articleId = req.params.id;
     const gambarArtikel = req.body.gambar;
     const deskripsiArtikel = req.body.deskripsi; 
     const judulArtikel = req.body.judul_artikel; 
@@ -58,8 +58,8 @@ app.post('/api/createartikel', (req, res) => {
         console.log(result);
       }
     });
-  });
-  
+});
+
 
   //delete
 
