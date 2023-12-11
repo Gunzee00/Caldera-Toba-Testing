@@ -64,20 +64,20 @@ app.post('/api/createartikel', (req, res) => {
 
   //delete
 
-  app.delete('/api/deleteartikel', (req, res) => {
-    const idArtikel  = req.body.id_artikel; // Fix: Corrected variable name
-    const sqlQuery = "DELETE FROM artikel WHERE id_artikel = ?";
-  
-    db.query(sqlQuery, [idArtikel], (err, result) => {
-      if (err) {
-        console.error(err);
-        res.status(500).send("Error deleting artikel");
-      } else {
-        console.log(result);
-        res.send(result);
-      }
+    app.delete('/api/deleteartikel', (req, res) => {
+      const idArtikel  = req.body.id_artikel; // Fix: Corrected variable name
+      const sqlQuery = "DELETE FROM artikel WHERE id_artikel = ?";
+    
+      db.query(sqlQuery, [idArtikel], (err, result) => {
+        if (err) {
+          console.error(err);
+          res.status(500).send("Error deleting artikel");
+        } else {
+          console.log(result);
+          res.send(result);
+        }
+      });
     });
-  });
   
 
 
