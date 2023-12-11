@@ -20,28 +20,86 @@ describe('API Test', () => {
 
 // Create data
 describe('Create Tiket API Test', () => {
-  it('should create an article and return status code 200', async () => {
-    // Define the data to be sent in the POST request
-    const postData = {
+  const testCases = [
+    {
       gambar_tiket: 'Tiket contoh.jpg',
       jenis_tiket: 'contoh jenis tiket',
       harga: 'contoh harga',
       keterangan: 'Sample keterangan',
-    };
+      stok: '1',
+    },
+    {
+      gambar_tiket: '123.jpg', 
+      jenis_tiket: 'bioskop', 
+      harga: '50000', 
+      keterangan: '',
+      stok: '2',
+    },
+    {
+      gambar_tiket: '', 
+      jenis_tiket: 'kereta api', 
+      harga: '100000', 
+      keterangan: '/',
+    },
+    {
+      gambar_tiket: 'abc.png', 
+      jenis_tiket: '123', 
+      harga: '$$$', 
+      keterangan: '?',
+      stok: '3',
+    },
+    {
+      gambar_tiket: 'tiket.pdf', 
+      jenis_tiket: 'pesawat', 
+      harga: '1500000', 
+      keterangan: 'Jakarta - Denpasar',
+      stok: '4',
+    },
+    {
+      gambar_tiket: '{}', 
+      jenis_tiket: '()', 
+      harga: '#', 
+      keterangan: ';',
+      stok: '4',
+    },
+    {
+      gambar_tiket: '????.png', 
+      jenis_tiket: '????????', 
+      harga: '??????', 
+      keterangan: '????',
+      stok: '???',
+    },
+    {
+      gambar_tiket: 'tiket123.jpg', 
+      jenis_tiket: 'bioskop', 
+      harga: '125000', 
+      keterangan: 'Film Spiderman',
+      stok: '0'
+    },
+    {
+      gambar_tiket: '', 
+      jenis_tiket: '', 
+      harga: '', 
+      keterangan: '',
+      stok:'',
+    },
+  ];
 
-    // Make the POST request
-    try {
-      const response = await axios.post('http://localhost:3005/api/createtiket', postData);
+  testCases.forEach((testCase, index) => {
+    it(`should create an article and return status code 200 - Test Case ${index + 1}`, async () => {
+      try {
+        const response = await axios.post('http://localhost:3005/api/createtiket', testCase);
 
-      // Assertions
-      assert.strictEqual(response.status, 200);
-      assert.ok(response.data); // Check if response.data is truthy
+        // Assertions
+        assert.strictEqual(response.status, 200);
+        assert.ok(response.data); // Check if response.data is truthy
 
-      console.log('Article created successfully:', response.data);
-    } catch (error) {
-      console.error('Error creating article:', error.message);
-      throw error;
-    }
+        console.log(`Tiket created successfully - Test Case ${index + 1}:`, response.data);
+      } catch (error) {
+        console.error(`Error creating tiket - Test Case ${index + 1}:`, error.message);
+        throw error;
+      }
+    });
   });
 });
 
