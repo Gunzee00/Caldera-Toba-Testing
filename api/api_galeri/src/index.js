@@ -42,23 +42,24 @@ app.post('/api/creategaleri', (req, res) => {
   });
 
   //update
-  app.put('/api/updategaleri', (req, res) => {
-    const judulGaleri = req.body.judul_galeri;
-    const gambarGaleri = req.body.gambar_galeri; 
-    const deskripsiGaleri = req.body.deskripsi_galeri; 
   
-    const sqlQuery = "UPDATE galeri SET judul_galeri= ?, gambar_galeri=?, deskripsi_galeri=? ";
-    db.query(sqlQuery,[judulGaleri,gambarGaleri, deskripsiGaleri ], (err,result)=>{
-        if(err) {
+  app.put('/api/updategaleri/:id', (req, res) => {
+    const galeriId = req.params.id; // Perbaiki di sini
+    const gambarGaleri = req.body.gambar_galeri;
+    const deskripsiGaleri = req.body.deskripsi_galeri;
+    const judulGaleri = req.body.judul_galeri;
+  
+    const sqlQuery = "UPDATE galeri SET gambar_galeri=?, deskripsi_galeri=?, judul_galeri=? WHERE id_galeri=?";
+    db.query(sqlQuery, [gambarGaleri, deskripsiGaleri, judulGaleri, galeriId], (err, result) => {
+        if (err) {
             console.log(err);
-
-        }else{
+            res.status(500).send(err);
+        } else {
             res.send(result);
-            console.log(result)
+            console.log(result);
         }
-    })
+    });
   });
-
   //delete
 
   app.delete('/api/deletegaleri', (req, res) => {
@@ -79,5 +80,5 @@ app.post('/api/creategaleri', (req, res) => {
 
 
 app.listen(3001, ()=>{
-    console.log('server berhasil berjalan')
+    console.log('server berhasil berjalan pada port 3001')
 })

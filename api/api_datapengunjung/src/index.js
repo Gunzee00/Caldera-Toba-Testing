@@ -43,23 +43,23 @@ app.post('/api/createdatapengunjung', (req, res) => {
   });
 
   //update
-  app.put('/api/updatedatapengunjung', (req, res) => {
+  app.put('/api/updatedatapengunjung/:id', (req, res) => {
+    const dataId = req.params.id;
     const namaPengunjung = req.body.nama_pengunjung;
-    const nik = req.body.nik; 
-    const tempatTinggal = req.body.tempat_tinggal; 
-  
-    const sqlQuery = "UPDATE data_pengunjung SET nama_pengunjung= ?, nik=?, tempat_tinggal=?";
-    db.query(sqlQuery,[namaPengunjung,nik, tempatTinggal ], (err,result)=>{
-        if(err) {
+    const nik = req.body.nik;
+    const tempatTinggal = req.body.tempat_tinggal;
+
+    const sqlQuery = "UPDATE data_pengunjung SET nama_pengunjung=?, nik=?, tempat_tinggal=? WHERE id_data=?";
+    db.query(sqlQuery, [namaPengunjung, nik, tempatTinggal, dataId], (err, result) => {
+        if (err) {
             console.log(err);
-
-        }else{
+            res.status(500).send(err); // Send an error response to the client
+        } else {
             res.send(result);
-            console.log(result)
+            console.log(result);
         }
-    })
-  });
-
+    });
+});
   //delete
   app.delete('/api/deletedatapengunjung', (req, res) => {
     const idData = req.body.id_data; 
@@ -79,5 +79,5 @@ app.post('/api/createdatapengunjung', (req, res) => {
 
 
 app.listen(3004, ()=>{
-    console.log('server berhasil berjalan')
+    console.log('server berhasil berjalan pada port 3004')
 })

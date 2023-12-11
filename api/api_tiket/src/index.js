@@ -45,24 +45,25 @@ app.post('/api/createtiket', (req, res) => {
   });
 
   //update
-  app.put('/api/updatetiket', (req, res) => {
+  app.put('/api/updatetiket/:id', (req, res) => {
+    const tiketId = req.params.id;
     const jenisTiket = req.body.jenis_tiket;
     const gambarTiket = req.body.gambar_tiket; 
     const harga = req.body.harga; 
     const stok = req.body.stok; 
     const keterangan = req.body.keterangan; 
   
-    const sqlQuery = "UPDATE tiket SET jenis_tiket= ?, gambar_tiket=?, harga=?, stok=?, keterangan=? ";
-    db.query(sqlQuery,[jenisTiket,gambarTiket, harga, stok,keterangan ], (err,result)=>{
-        if(err) {
+    const sqlQuery = "UPDATE tiket SET jenis_tiket=?, gambar_tiket=?, harga=?, stok=?, keterangan=? WHERE id=?";
+    db.query(sqlQuery, [jenisTiket, gambarTiket, harga, stok, keterangan, tiketId], (err, result) => {
+        if (err) {
             console.log(err);
-
-        }else{
+            res.status(500).send(err); // Send an error response to the client
+        } else {
             res.send(result);
-            console.log(result)
+            console.log(result);
         }
-    })
-  });
+    });
+});
 
   //delete
 

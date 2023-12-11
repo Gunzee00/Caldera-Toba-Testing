@@ -46,31 +46,40 @@ describe('Create Tiket API Test', () => {
 });
 
 // Update data (fixing the error)
-describe('Update Artikel API Test', () => {
-  it('should update an article and return status code 200', async () => {
-    // Assume you have an existing article with an ID that you want to update
-    const articleIdToUpdate = 11;
+describe('Update Tiket API Test', () => {
+  it('should update a tiket and return status code 200', async () => {
+      // Assume you have an existing tiket with an ID that you want to update
+      const tiketIdToUpdate = 11;
 
-    // Define the data to be sent in the PUT request
-    const updateData = {
-      gambar: 'updated_gambar.jpg',
-      deskripsi: 'updated_contoh',
-      judul_artikel: 'Updated Sample Judul Artikel',
-    };
+      // Define the data to be sent in the PUT request
+      const updateData = {
+          jenis_tiket: 'Updated Jenis Tiket',
+          gambar_tiket: 'updated_gambar_tiket.jpg',
+          harga: 100, // replace with the desired updated value
+          stok: 50,   // replace with the desired updated value
+          keterangan: 'Updated Keterangan',
+      };
 
-    // Make the PUT request to update the article
-    try {
-      const response = await axios.put(`http://localhost:3005/api/updateartikel/${articleIdToUpdate}`, updateData);
+      // Make the PUT request to update the tiket
+      try {
+          const response = await axios.put(`http://localhost:3005/api/updatetiket/${tiketIdToUpdate}`, updateData);
 
-      // Assertions
-      assert.strictEqual(response.status, 200);
-      assert.ok(response.data); // Check if response.data is truthy
-      assert.strictEqual(response.data.id, 11); // Adjust based on the actual structure of the response
-      console.log('Article updated successfully:', response.data);
-    } catch (error) {
-      console.error('Error updating article:', error.message);
-      throw error;
-    }
+          // Assertions
+          assert.strictEqual(response.status, 200);
+          assert.ok(response.data); // Check if response.data is truthy
+
+          // Adjust based on the actual structure of the response
+          if (response.data && response.data.id !== undefined) {
+              assert.strictEqual(response.data.id, tiketIdToUpdate);
+          } else {
+              throw new Error('Invalid response structure. Unable to verify tiket update.');
+          }
+
+          console.log('Tiket updated successfully:', response.data);
+      } catch (error) {
+          console.error('Error updating tiket:', error.message);
+          throw error;
+      }
   });
 });
 

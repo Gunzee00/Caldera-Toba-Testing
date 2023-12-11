@@ -26,6 +26,7 @@ app.get('/api/readdataartikel',(req,res)=>{
 //create
 app.post('/api/createartikel', (req, res) => {
     const gambarArtikel = req.body.gambar;
+    // const gambarArtikel = req.body.gambar;
     const deskripsiArtikel = req.body.deskripsi; 
     const judulArtikel = req.body.judul_artikel; 
   
