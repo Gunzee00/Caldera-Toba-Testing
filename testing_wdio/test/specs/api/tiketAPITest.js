@@ -74,7 +74,7 @@ describe('Create Tiket API Test', () => {
       jenis_tiket: 'bioskop', 
       harga: '125000', 
       keterangan: 'Film Spiderman',
-      stok: '0'
+      stok: '0',
     },
     {
       gambar_tiket: '', 
