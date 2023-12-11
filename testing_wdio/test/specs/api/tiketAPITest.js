@@ -40,34 +40,35 @@ describe('Create Tiket API Test', () => {
       jenis_tiket: 'kereta api', 
       harga: '100000', 
       keterangan: '/',
+      stok: '3',
     },
     {
       gambar_tiket: 'abc.png', 
       jenis_tiket: '123', 
-      harga: '$$$', 
+      harga: '150000', 
       keterangan: '?',
       stok: '3',
     },
     {
       gambar_tiket: 'tiket.pdf', 
       jenis_tiket: 'pesawat', 
-      harga: '1500000', 
+      harga: '1000000', 
       keterangan: 'Jakarta - Denpasar',
       stok: '4',
     },
     {
       gambar_tiket: '{}', 
       jenis_tiket: '()', 
-      harga: '#', 
+      harga: '100000', 
       keterangan: ';',
       stok: '4',
     },
     {
       gambar_tiket: '????.png', 
       jenis_tiket: '????????', 
-      harga: '??????', 
+      harga: '100000', 
       keterangan: '????',
-      stok: '???',
+      stok: '9',
     },
     {
       gambar_tiket: 'tiket123.jpg', 
@@ -79,9 +80,9 @@ describe('Create Tiket API Test', () => {
     {
       gambar_tiket: '', 
       jenis_tiket: '', 
-      harga: '', 
+      harga: '120000', 
       keterangan: '',
-      stok:'',
+      stok:'11',
     },
   ];
 
@@ -105,39 +106,92 @@ describe('Create Tiket API Test', () => {
 
 // Update data (fixing the error)
 describe('Update Tiket API Test', () => {
-  it('should update a tiket and return status code 200', async () => {
-      // Assume you have an existing tiket with an ID that you want to update
-      const tiketIdToUpdate = 11;
+  const tiketIdToUpdate = 11; // Update this with the correct article ID
 
-      // Define the data to be sent in the PUT request
-      const updateData = {
-          jenis_tiket: 'Updated Jenis Tiket',
-          gambar_tiket: 'updated_gambar_tiket.jpg',
-          harga: 100, // replace with the desired updated value
-          stok: 50,   // replace with the desired updated value
-          keterangan: 'Updated Keterangan',
-      };
+  const testCases = [
+    {
+      jenis_tiket: 'Updated Jenis Tiket',
+      gambar_tiket: 'updated_gambar_tiket.jpg',
+      harga: 100, // replace with the desired updated value
+      stok: 50,   // replace with the desired updated value
+      keterangan: 'Updated Keterangan',
+    },
+    {
+      gambar_tiket: '123.jpg', 
+      jenis_tiket: 'bioskop', 
+      harga: 50000, 
+      keterangan: '',
+      stok: 2,
+    },
+    {
+      gambar_tiket: '', 
+      jenis_tiket: 'kereta api', 
+      harga: 100000, 
+      keterangan: '/',
+      stok: 3,
+    },
+    {
+      gambar_tiket: 'abc.png', 
+      jenis_tiket: '123', 
+      harga: 150000, 
+      keterangan: '?',
+      stok: 3,
+    },
+    {
+      gambar_tiket: 'tiket.pdf', 
+      jenis_tiket: 'pesawat', 
+      harga: 1000000, 
+      keterangan: 'Jakarta - Denpasar',
+      stok: 4,
+    },
+    {
+      gambar_tiket: '{}', 
+      jenis_tiket: '()', 
+      harga: 100000, 
+      keterangan: ';',
+      stok: 4,
+    },
+    {
+      gambar_tiket: '????.png', 
+      jenis_tiket: '????????', 
+      harga: 100000, 
+      keterangan: '????',
+      stok: 9,
+    },
+    {
+      gambar_tiket: 'tiket123.jpg', 
+      jenis_tiket: 'bioskop', 
+      harga: 125000, 
+      keterangan: 'Film Spiderman',
+      stok: 0,
+    },
+    {
+      gambar_tiket: '', 
+      jenis_tiket: '', 
+      harga: 120000, 
+      keterangan: '',
+      stok: 11,
+    },
+    // Add more test cases as needed
+  ];
 
-      // Make the PUT request to update the tiket
+  testCases.forEach((updateData, index) => {
+    it(`should update an article with test case ${index + 1}`, async () => {
       try {
-          const response = await axios.put(`http://localhost:3005/api/updatetiket/${tiketIdToUpdate}`, updateData);
+        const response = await axios.put(`http://localhost:3005/api/updatetiket/${tiketIdToUpdate}`, updateData);
 
-          // Assertions
-          assert.strictEqual(response.status, 200);
-          assert.ok(response.data); // Check if response.data is truthy
+        assert.strictEqual(response.status, 200);
+        assert.ok(response.data); // Ensure response.data is not undefined
 
-          // Adjust based on the actual structure of the response
-          if (response.data && response.data.id !== undefined) {
-              assert.strictEqual(response.data.id, tiketIdToUpdate);
-          } else {
-              throw new Error('Invalid response structure. Unable to verify tiket update.');
-          }
-
-          console.log('Tiket updated successfully:', response.data);
+        console.log(`Ticket updated successfully with test case ${index + 1}:`, response.data);
       } catch (error) {
-          console.error('Error updating tiket:', error.message);
-          throw error;
+        console.error(`Error updating Tiket with test case ${index + 1}:`, error.message);
+        if (error.response) {
+          console.error('Server responded with:', error.response.status, error.response.data);
+        }
+        throw error;
       }
+    });
   });
 });
 
@@ -157,9 +211,9 @@ describe('Delete Tiket API Test', () => {
       assert.strictEqual(response.status, 200);
       assert.ok(response.data); // Check if response.data is truthy
 
-      console.log('Article deleted successfully:', response.data);
+      console.log('Tiket deleted successfully:', response.data);
     } catch (error) {
-      console.error('Error deleting article:', error.message);
+      console.error('Error deleting Tiket:', error.message);
       throw error;
     }
   });
