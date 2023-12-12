@@ -147,7 +147,7 @@ describe('Create Artikel API Test', () => {
       }
     });
   });
-});
+
 
 
 // //update data 
