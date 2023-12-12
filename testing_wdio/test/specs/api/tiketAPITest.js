@@ -19,325 +19,350 @@ import assert from 'assert';
 //   });
 // });
 
-<<<<<<< HEAD
+
 // // // Create data
-describe('Create Data API Test', () => {
-  const testCases = [
-    {
-      description: 'should create data with alphanumeric characters',
-      postData: {
-        gambar_tiket: 'Tiket contoh.jpg',
-      jenis_tiket: 'contoh jenis',
-      harga: '200000',
-      keterangan: 'Sample keterangan',
-      stok: '10',  
-      },
-    },
-    {
-      description: 'should create data with numeric characters',
-      postData: {
-        gambar_tiket: 'Tiket contoh.jpg',
-      jenis_tiket: 'contoh jenis tiket',
-      harga: 'contoh harga',
-      keterangan: 'Sample keterangan',
-      stok: 'satu',
-      },
-    },
-    {
-      description: 'should create data with numeric characters',
-      postData: {
-        gambar_tiket: '',
-      jenis_tiket: 'contoh jenis tiket',
-      harga: 'contoh harga',
-      keterangan: 'Sample keterangan',
-      stok: 'satu',
-      },
-    },
-    {
-      description: 'should create data with numeric characters',
-      postData: {
-        gambar_tiket: 'Tiket contoh.jpg',
-      jenis_tiket: '',
-      harga: 'contoh harga',
-      keterangan: 'Sample keterangan',
-      stok: 'satu',
-      },
-    },
-    {
-      description: 'should create data with numeric characters',
-      postData: {
-        gambar_tiket: 'Tiket contoh.jpg',
-      jenis_tiket: 'contoh jenis tiket',
-      harga: '',
-      keterangan: 'Sample keterangan',
-      stok: 'satu',
-      },
-    },
-    {
-      description: 'should create data with numeric characters',
-      postData: {
-        gambar_tiket: 'Tiket contoh.jpg',
-      jenis_tiket: 'contoh jenis tiket',
-      harga: 'harga',
-      keterangan: '',
-      stok: 'satu',
-      },
-    },
-    {
-      description: 'should create data with numeric characters',
-      postData: {
-        gambar_tiket: 'Tiket contoh.jpg',
-      jenis_tiket: 'contoh jenis tiket',
-      harga: 'harga',
-      keterangan: 'keterangan',
-      stok: '',
-      },
-    },
-    {
-      description: 'should create data with numeric characters',
-      postData: {
-        gambar_tiket: '',
-      jenis_tiket: '',
-      harga: 'harga',
-      keterangan: 'keterangan',
-      stok: 'satu',
-      },
-    },
-    
+// describe('Create Data API Test', () => {
+//   const testCases = [
+//     {
+//       description: 'seharusnya membuat data dengan karakter alfanumerik',
+//       postData: {
+//         gambar_tiket: 'Tiket contoh.jpg',
+//         jenis_tiket: 'contoh jenis',
+//         harga: 'harga',
+//         keterangan: 'Sample keterangan',
+//         stok: 'satu',  
+//       },
+//     },
+//     {
+//       description: 'seharusnya membuat data dengan karakter numerik',
+//       postData: {
+//         gambar_tiket: 'Tiket contoh.jpg',
+//         jenis_tiket: 'contoh jenis tiket',
+//         harga: 'contoh harga',
+//         keterangan: 'Sample keterangan',
+//         stok: 'satu',
+//       },
+//     },
+//     {
+//       description: 'seharusnya membuat data dengan gambar kosong',
+//       postData: {
+//         gambar_tiket: '',
+//         jenis_tiket: 'contoh jenis tiket',
+//         harga: 'contoh harga',
+//         keterangan: 'Sample keterangan',
+//         stok: 'satu',
+//       },
+//     },
+//     {
+//       description: 'seharusnya membuat data dengan jenis tiket kosong',
+//       postData: {
+//         gambar_tiket: 'Tiket contoh.jpg',
+//         jenis_tiket: '',
+//         harga: 'contoh harga',
+//         keterangan: 'Sample keterangan',
+//         stok: 'satu',
+//       },
+//     },
+//     {
+//       description: 'seharusnya membuat data dengan harga kosong',
+//       postData: {
+//         gambar_tiket: 'Tiket contoh.jpg',
+//         jenis_tiket: 'contoh jenis tiket',
+//         harga: '',
+//         keterangan: 'Sample keterangan',
+//         stok: 'satu',
+//       },
+//     },
+//     {
+//       description: 'seharusnya membuat data dengan keterangan kosong',
+//       postData: {
+//         gambar_tiket: 'Tiket contoh.jpg',
+//         jenis_tiket: 'contoh jenis tiket',
+//         harga: 'harga',
+//         keterangan: '',
+//         stok: 'satu',
+//       },
+//     },
+//     {
+//       description: 'seharusnya membuat data dengan stok kosong',
+//       postData: {
+//         gambar_tiket: 'Tiket contoh.jpg',
+//         jenis_tiket: 'contoh jenis tiket',
+//         harga: 'harga',
+//         keterangan: 'keterangan',
+//         stok: '',
+//       },
+//     },
+//     {
+//       description: 'seharusnya membuat data dengan karakter alfanumerik kosong',
+//       postData: {
+//         gambar_tiket: ' ',
+//         jenis_tiket: ' ',
+//         harga: ' ',
+//         keterangan: ' ',
+//         stok: ' ',  
+//       },
+//     },
+//     {
+//       description: 'seharusnya membuat data dengan karakter alfanumerik',
+//       postData: {
+//         gambar_tiket: 'Tiket contoh.jpg',
+//         jenis_tiket: '12345',
+//         harga: '1234',
+//         keterangan: '12345',
+//         stok: '12345',  
+//       },
+//     },
+//     {
+//       description: 'seharusnya membuat data dengan karakter alfanumerik khusus',
+//       postData: {
+//         gambar_tiket: '!@#$%',
+//         jenis_tiket: '!@#$%',
+//         harga: '!@#$%',
+//         keterangan: '!@#$%',
+//         stok: '!@#$%',  
+//       },
+//     },
+//   ];
 
-    
-    // Add more test cases as needed
-  ];
+//   testCases.forEach((testCase) => {
+//     it(testCase.description, async () => {
+//       try {
+//         const response = await axios.post('http://localhost:3005/api/createtiket', testCase.postData);
 
-  testCases.forEach((testCase) => {
-    it(testCase.description, async () => {
-      try {
-        const response = await axios.post('http://localhost:3005/api/createtiket', testCase.postData);
+//         assert.strictEqual(response.status, 200);
+//         assert.ok(response.data);
 
-        assert.strictEqual(response.status, 200);
-        assert.ok(response.data);
-
-        console.log('Data created successfully:', response.data);
-      } catch (error) {
-        console.error('Error creating data:', error.message);
-=======
-// Create data
-describe('Create Tiket API Test', () => {
-  const testCases = [
-    {
-      gambar_tiket: 'Tiket contoh.jpg',
-      jenis_tiket: 'contoh jenis tiket',
-      harga: 'contoh harga',
-      keterangan: 'Sample keterangan',
-      stok: '1',
-    },
-    {
-      gambar_tiket: '123.jpg', 
-      jenis_tiket: 'bioskop', 
-      harga: '50000', 
-      keterangan: '',
-      stok: '2',
-    },
-    {
-      gambar_tiket: '', 
-      jenis_tiket: 'kereta api', 
-      harga: '100000', 
-      keterangan: '/',
-      stok: '3',
-    },
-    {
-      gambar_tiket: 'abc.png', 
-      jenis_tiket: '123', 
-      harga: '150000', 
-      keterangan: '?',
-      stok: '3',
-    },
-    {
-      gambar_tiket: 'tiket.pdf', 
-      jenis_tiket: 'pesawat', 
-      harga: '1000000', 
-      keterangan: 'Jakarta - Denpasar',
-      stok: '4',
-    },
-    {
-      gambar_tiket: '{}', 
-      jenis_tiket: '()', 
-      harga: '100000', 
-      keterangan: ';',
-      stok: '4',
-    },
-    {
-      gambar_tiket: '????.png', 
-      jenis_tiket: '????????', 
-      harga: '100000', 
-      keterangan: '????',
-      stok: '9',
-    },
-    {
-      gambar_tiket: 'tiket123.jpg', 
-      jenis_tiket: 'bioskop', 
-      harga: '125000', 
-      keterangan: 'Film Spiderman',
-      stok: '0',
-    },
-    {
-      gambar_tiket: '', 
-      jenis_tiket: '', 
-      harga: '120000', 
-      keterangan: '',
-      stok:'11',
-    },
-  ];
-
-  testCases.forEach((testCase, index) => {
-    it(`should create an article and return status code 200 - Test Case ${index + 1}`, async () => {
-      try {
-        const response = await axios.post('http://localhost:3005/api/createtiket', testCase);
-
-        // Assertions
-        assert.strictEqual(response.status, 200);
-        assert.ok(response.data); // Check if response.data is truthy
-
-        console.log(`Tiket created successfully - Test Case ${index + 1}:`, response.data);
-      } catch (error) {
-        console.error(`Error creating tiket - Test Case ${index + 1}:`, error.message);
-        throw error;
-      }
-    });
-  });
-});
+//         console.log('Data created successfully:', response.data);
+//       } catch (error) {
+//         console.error('Error creating data:', error.message);
+//       }
+//     });
+//   });
+// });
 
 // Update data (fixing the error)
+// describe('Update Tiket API Test', () => {
+//   const tiketIdToUpdate = 11; // Update this with the correct article ID
+
+//   const testCases = [
+//     {
+//       jenis_tiket: 'Updated Jenis Tiket',
+//       gambar_tiket: 'updated_gambar_tiket.jpg',
+//       harga: 100, // replace with the desired updated value
+//       stok: 50,   // replace with the desired updated value
+//       keterangan: 'Updated Keterangan',
+//     },
+//     {
+//       gambar_tiket: '123.jpg', 
+//       jenis_tiket: 'bioskop', 
+//       harga: 50000, 
+//       keterangan: '',
+//       stok: 2,
+//     },
+//     {
+//       gambar_tiket: '', 
+//       jenis_tiket: 'kereta api', 
+//       harga: 100000, 
+//       keterangan: '/',
+//       stok: 3,
+//     },
+//     {
+//       gambar_tiket: 'abc.png', 
+//       jenis_tiket: '123', 
+//       harga: 150000, 
+//       keterangan: '?',
+//       stok: 3,
+//     },
+//     {
+//       gambar_tiket: 'tiket.pdf', 
+//       jenis_tiket: 'pesawat', 
+//       harga: 1000000, 
+//       keterangan: 'Jakarta - Denpasar',
+//       stok: 4,
+//     },
+//     {
+//       gambar_tiket: '{}', 
+//       jenis_tiket: '()', 
+//       harga: 100000, 
+//       keterangan: ';',
+//       stok: 4,
+//     },
+//     {
+//       gambar_tiket: '????.png', 
+//       jenis_tiket: '????????', 
+//       harga: 100000, 
+//       keterangan: '????',
+//       stok: 9,
+//     },
+//     {
+//       gambar_tiket: 'tiket123.jpg', 
+//       jenis_tiket: 'bioskop', 
+//       harga: 125000, 
+//       keterangan: 'Film Spiderman',
+//       stok: 0,
+//     },
+//     {
+//       gambar_tiket: '', 
+//       jenis_tiket: '', 
+//       harga: 120000, 
+//       keterangan: '',
+//       stok: 11,
+//     },
+//     // Add more test cases as needed
+//   ];
+
+//   testCases.forEach((updateData, index) => {
+//     it(`should update an article with test case ${index + 1}`, async () => {
+//       try {
+//         const response = await axios.put(`http://localhost:3005/api/updatetiket/${tiketIdToUpdate}`, updateData);
+
+//         assert.strictEqual(response.status, 200);
+//         assert.ok(response.data); // Ensure response.data is not undefined
+
+//         console.log(`Ticket updated successfully with test case ${index + 1}:`, response.data);
+//       } catch (error) {
+//         console.error(`Error updating Tiket with test case ${index + 1}:`, error.message);
+//         if (error.response) {
+//           console.error('Server responded with:', error.response.status, error.response.data);
+//         }
+
+//         throw error;
+//       }
+//     });
+//   });
+// });
+
+
+// Update data 
 describe('Update Tiket API Test', () => {
   const tiketIdToUpdate = 11; // Update this with the correct article ID
 
   const testCases = [
     {
-      jenis_tiket: 'Updated Jenis Tiket',
-      gambar_tiket: 'updated_gambar_tiket.jpg',
-      harga: 100, // replace with the desired updated value
-      stok: 50,   // replace with the desired updated value
-      keterangan: 'Updated Keterangan',
+      description: 'seharusnya membuat data dengan karakter alfanumerik',
+      postData: {
+        gambar_tiket: 'Tiket contoh.jpg',
+        jenis_tiket: 'contoh jenis',
+        harga: 'harga',
+        keterangan: 'Sample keterangan',
+        stok: 'satu',  
+      },
     },
     {
-      gambar_tiket: '123.jpg', 
-      jenis_tiket: 'bioskop', 
-      harga: 50000, 
-      keterangan: '',
-      stok: 2,
+      description: 'seharusnya membuat data dengan karakter numerik',
+      postData: {
+        gambar_tiket: 'Tiket contoh.jpg',
+        jenis_tiket: 'contoh jenis tiket',
+        harga: 'contoh harga',
+        keterangan: 'Sample keterangan',
+        stok: 'satu',
+      },
     },
     {
-      gambar_tiket: '', 
-      jenis_tiket: 'kereta api', 
-      harga: 100000, 
-      keterangan: '/',
-      stok: 3,
+      description: 'seharusnya membuat data dengan gambar kosong',
+      postData: {
+        gambar_tiket: '',
+        jenis_tiket: 'contoh jenis tiket',
+        harga: 'contoh harga',
+        keterangan: 'Sample keterangan',
+        stok: 'satu',
+      },
     },
     {
-      gambar_tiket: 'abc.png', 
-      jenis_tiket: '123', 
-      harga: 150000, 
-      keterangan: '?',
-      stok: 3,
+      description: 'seharusnya membuat data dengan jenis tiket kosong',
+      postData: {
+        gambar_tiket: 'Tiket contoh.jpg',
+        jenis_tiket: '',
+        harga: 'contoh harga',
+        keterangan: 'Sample keterangan',
+        stok: 'satu',
+      },
     },
     {
-      gambar_tiket: 'tiket.pdf', 
-      jenis_tiket: 'pesawat', 
-      harga: 1000000, 
-      keterangan: 'Jakarta - Denpasar',
-      stok: 4,
+      description: 'seharusnya membuat data dengan harga kosong',
+      postData: {
+        gambar_tiket: 'Tiket contoh.jpg',
+        jenis_tiket: 'contoh jenis tiket',
+        harga: '',
+        keterangan: 'Sample keterangan',
+        stok: 'satu',
+      },
     },
     {
-      gambar_tiket: '{}', 
-      jenis_tiket: '()', 
-      harga: 100000, 
-      keterangan: ';',
-      stok: 4,
+      description: 'seharusnya membuat data dengan keterangan kosong',
+      postData: {
+        gambar_tiket: 'Tiket contoh.jpg',
+        jenis_tiket: 'contoh jenis tiket',
+        harga: 'harga',
+        keterangan: '',
+        stok: 'satu',
+      },
     },
     {
-      gambar_tiket: '????.png', 
-      jenis_tiket: '????????', 
-      harga: 100000, 
-      keterangan: '????',
-      stok: 9,
+      description: 'seharusnya membuat data dengan stok kosong',
+      postData: {
+        gambar_tiket: 'Tiket contoh.jpg',
+        jenis_tiket: 'contoh jenis tiket',
+        harga: 'harga',
+        keterangan: 'keterangan',
+        stok: '',
+      },
     },
     {
-      gambar_tiket: 'tiket123.jpg', 
-      jenis_tiket: 'bioskop', 
-      harga: 125000, 
-      keterangan: 'Film Spiderman',
-      stok: 0,
+      description: 'seharusnya membuat data dengan karakter alfanumerik kosong',
+      postData: {
+        gambar_tiket: ' ',
+        jenis_tiket: ' ',
+        harga: ' ',
+        keterangan: ' ',
+        stok: ' ',  
+      },
     },
     {
-      gambar_tiket: '', 
-      jenis_tiket: '', 
-      harga: 120000, 
-      keterangan: '',
-      stok: 11,
+      description: 'seharusnya membuat data dengan karakter alfanumerik',
+      postData: {
+        gambar_tiket: 'Tiket contoh.jpg',
+        jenis_tiket: '12345',
+        harga: '1234',
+        keterangan: '12345',
+        stok: '12345',  
+      },
     },
-    // Add more test cases as needed
+    {
+      description: 'seharusnya membuat data dengan karakter alfanumerik khusus',
+      postData: {
+        gambar_tiket: '!@#$%',
+        jenis_tiket: '!@#$%',
+        harga: '!@#$%',
+        keterangan: '!@#$%',
+        stok: '!@#$%',  
+      },
+    },
   ];
 
-  testCases.forEach((updateData, index) => {
-    it(`should update an article with test case ${index + 1}`, async () => {
+  testCases.forEach((testCase, index) => {
+    const { description, postData } = testCase;
+
+    it(description, async () => {
       try {
-        const response = await axios.put(`http://localhost:3005/api/updatetiket/${tiketIdToUpdate}`, updateData);
+        const response = await axios.put(`http://localhost:3005/api/updatetiket/${tiketIdToUpdate}`, postData);
 
         assert.strictEqual(response.status, 200);
         assert.ok(response.data); // Ensure response.data is not undefined
 
-        console.log(`Ticket updated successfully with test case ${index + 1}:`, response.data);
+        console.log(`${description}: Article updated successfully with test case ${index + 1}:`, response.data);
       } catch (error) {
-        console.error(`Error updating Tiket with test case ${index + 1}:`, error.message);
+        console.error(`${description}: Error updating article with test case ${index + 1}:`, error.message);
         if (error.response) {
           console.error('Server responded with:', error.response.status, error.response.data);
         }
->>>>>>> 38ba17f5be725fde6e721708d7d4ca15b3c44d9b
         throw error;
       }
     });
   });
 });
 
-
-// // // Update data (fixing the error)
-// // describe('Update Tiket API Test', () => {
-// //   it('should update a tiket and return status code 200', async () => {
-// //       // Assume you have an existing tiket with an ID that you want to update
-// //       const tiketIdToUpdate = 11;
-
-// //       // Define the data to be sent in the PUT request
-// //       const updateData = {
-// //           jenis_tiket: 'Updated Jenis Tiket',
-// //           gambar_tiket: 'updated_gambar_tiket.jpg',
-// //           harga: 100, // replace with the desired updated value
-// //           stok: 50,   // replace with the desired updated value
-// //           keterangan: 'Updated Keterangan',
-// //       };
-
-<<<<<<< HEAD
-// //       // Make the PUT request to update the tiket
-// //       try {
-// //           const response = await axios.put(`http://localhost:3005/api/updatetiket/${tiketIdToUpdate}`, updateData);
-
-// //           // Assertions
-// //           assert.strictEqual(response.status, 200);
-// //           assert.ok(response.data); // Check if response.data is truthy
-
-// //           // Adjust based on the actual structure of the response
-// //           if (response.data && response.data.id !== undefined) {
-// //               assert.strictEqual(response.data.id, tiketIdToUpdate);
-// //           } else {
-// //               throw new Error('Invalid response structure. Unable to verify tiket update.');
-// //           }
-
-// //           console.log('Tiket updated successfully:', response.data);
-// //       } catch (error) {
-// //           console.error('Error updating tiket:', error.message);
-// //           throw error;
-// //       }
-// //   });
-// // });
 
 // // // Delete data
 // // describe('Delete Tiket API Test', () => {
@@ -362,12 +387,11 @@ describe('Update Tiket API Test', () => {
 // //     }
 // //   });
 // // });
-=======
-      console.log('Tiket deleted successfully:', response.data);
-    } catch (error) {
-      console.error('Error deleting Tiket:', error.message);
-      throw error;
-    }
-  });
-});
->>>>>>> 38ba17f5be725fde6e721708d7d4ca15b3c44d9b
+
+  //     console.log('Tiket deleted successfully:', response.data);
+  //   } catch (error) {
+  //     console.error('Error deleting Tiket:', error.message);
+  //     throw error;
+  //   }
+  // });
+    
