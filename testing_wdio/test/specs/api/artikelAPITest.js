@@ -37,8 +37,6 @@ describe('Create Artikel API Test', () => {
 
     try {
       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-
-
       assert.strictEqual(response.status, 200);
       assert.ok(response.data); 
 
