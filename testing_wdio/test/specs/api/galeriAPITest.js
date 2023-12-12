@@ -3,9 +3,26 @@
 import axios from 'axios';
 import assert from 'assert';
 
+//get data
+
+// describe('API Test', () => {
+//   beforeEach(function () {
+//     this.timeout(5000);
+//   });
+
+//   it('should return status code 200', async function () {
+//     try {
+//       const response = await axios.get('http://localhost:3001/api/readdatagaleri');
+
+//       assert.strictEqual(response.status, 200);
+//       console.log('Response Data:', response.data);
+//     } catch (error) {
+//       throw error;
+//     }
+//   });
+// });
+
 //create data
-
-
 describe('Create Galeri API Test', () => {
   const postData = [
     {
@@ -427,3 +444,20 @@ describe('Update Galeri API Test', () => {
   // Continue Test Cases for IDs 22 to 31...
 });
 
+//delete data
+// describe('Delete Galeri API Test', () => {
+//   it('should delete an article and return status code 200', async () => {
+//     const galeriIdToDelete = 1; 
+
+//     try {
+//       const response = await axios.delete('http://localhost:3001/api/deletegaleri', {
+//         data: { id_galeri: galeriIdToDelete },
+//       });
+
+//       assert.strictEqual(response.status, 200);
+//       assert.ok(response.data); 
+
+//       console.log('Article deleted successfully:', response.data);
+//     } catch (error) {
+//       console.error('Error deleting article:', error.message);
+//       throw error;
