@@ -9,18 +9,18 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 //read
-app.get('/api/readtiket',(req,res)=>{
-    const sqlQuery = "SELECT * FROM tiket";
-    db.query(sqlQuery,(err, result)=>{
-        if(err) {
-            console.log(err);
-
-        }else{
-            res.send(result);
-            console.log(result)
-        }
-    })
-})
+app.get('/api/readtiket', (req, res) => {
+  const sqlQuery = "SELECT * FROM tiket";
+  db.query(sqlQuery, (err, result) => {
+      if (err) {
+          console.error(err);
+          res.status(500).send({ error: 'Internal Server Error' });
+      } else {
+          res.status(200).send(result);
+          console.log(result);
+      }
+  });
+});
 
 
 //create
@@ -85,5 +85,5 @@ app.post('/api/createtiket', (req, res) => {
 
 
 app.listen(3005, ()=>{
-    console.log('server berhasil berjalan')
+    console.log('server berhasil berjalan 3005')
 })
