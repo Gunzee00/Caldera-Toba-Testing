@@ -23,11 +23,11 @@ export const config = {
     //
     specs: [
         //all
-        './test/specs/ui/galeriTest.js'
+        // './test/specs/ui/galeriTest.js'
         //ui login
         // './test/specs/ui/loginTest.spec.js',
         //ui Tiket User
-        // './test/specs/ui/loginTest.spec.js',
+        './test/specs/ui/registrasi.e2e.js',
         // './test/specs/api/artikelAPITest.spec.js'
     ],
     // Patterns to exclude.
