@@ -1,0 +1,143 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1702389564300' stop='1702389564469'>
+    <name>Create Kamar API Test</name>
+    <title>Create Kamar API Test</title>
+    <test-cases>
+        <test-case start='1702389564300' status='passed' stop='1702389564353'>
+            <name>should create a kamar with data set 1 and return status code 200</name>
+            <title>should create a kamar with data set 1 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564353' status='passed' stop='1702389564361'>
+            <name>should create a kamar with data set 2 and return status code 200</name>
+            <title>should create a kamar with data set 2 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564361' status='passed' stop='1702389564368'>
+            <name>should create a kamar with data set 3 and return status code 200</name>
+            <title>should create a kamar with data set 3 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564368' status='passed' stop='1702389564375'>
+            <name>should create a kamar with data set 4 and return status code 200</name>
+            <title>should create a kamar with data set 4 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564375' status='passed' stop='1702389564381'>
+            <name>should create a kamar with data set 5 and return status code 200</name>
+            <title>should create a kamar with data set 5 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564381' status='passed' stop='1702389564388'>
+            <name>should create a kamar with data set 6 and return status code 200</name>
+            <title>should create a kamar with data set 6 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564389' status='passed' stop='1702389564396'>
+            <name>should create a kamar with data set 7 and return status code 200</name>
+            <title>should create a kamar with data set 7 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564397' status='passed' stop='1702389564404'>
+            <name>should create a kamar with data set 8 and return status code 200</name>
+            <title>should create a kamar with data set 8 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564404' status='passed' stop='1702389564411'>
+            <name>should create a kamar with data set 9 and return status code 200</name>
+            <title>should create a kamar with data set 9 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564412' status='passed' stop='1702389564418'>
+            <name>should create a kamar with data set 10 and return status code 200</name>
+            <title>should create a kamar with data set 10 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564419' status='passed' stop='1702389564426'>
+            <name>should create a kamar with data set 11 and return status code 200</name>
+            <title>should create a kamar with data set 11 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564426' status='passed' stop='1702389564433'>
+            <name>should create a kamar with data set 12 and return status code 200</name>
+            <title>should create a kamar with data set 12 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564433' status='passed' stop='1702389564441'>
+            <name>should create a kamar with data set 13 and return status code 200</name>
+            <title>should create a kamar with data set 13 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564441' status='passed' stop='1702389564447'>
+            <name>should create a kamar with data set 14 and return status code 200</name>
+            <title>should create a kamar with data set 14 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564447' status='passed' stop='1702389564454'>
+            <name>should create a kamar with data set 15 and return status code 200</name>
+            <title>should create a kamar with data set 15 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564454' status='passed' stop='1702389564460'>
+            <name>should create a kamar with data set 16 and return status code 200</name>
+            <title>should create a kamar with data set 16 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564461' status='passed' stop='1702389564469'>
+            <name>should create a kamar with data set 17 and return status code 200</name>
+            <title>should create a kamar with data set 17 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

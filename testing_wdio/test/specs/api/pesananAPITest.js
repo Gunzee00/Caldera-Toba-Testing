@@ -15,7 +15,7 @@ import assert from 'assert';
 //       const response = await axios.get('http://localhost:3007/api/readpesanan');
 
 //       assert.strictEqual(response.status, 200);
-//       console.log('Response Data:', response.data);
+//       console.log('Data berhasil ditampilkan', response.data);
 //     } catch (error) {
 //       throw error;
 //     }
@@ -92,7 +92,7 @@ describe('Delete Pesanan API Test', () => {
 
       assert.strictEqual(response.status, 200);
       assert.ok(response.data); 
-      console.log('Article deleted successfully:', response.data);
+      console.log('Pesanan berhasil dihapus:', response.data);
     } catch (error) {
       console.error('Error deleting article:', error.message);
       throw error;

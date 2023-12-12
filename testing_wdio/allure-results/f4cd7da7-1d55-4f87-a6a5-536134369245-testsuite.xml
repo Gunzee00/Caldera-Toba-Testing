@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1702390208162' stop='1702390208250'>
+    <name>Create Data API Test</name>
+    <title>Create Data API Test</title>
+    <test-cases>
+        <test-case start='1702390208163' status='passed' stop='1702390208186'>
+            <name>seharusnya membuat data dengan karakter alfanumerik</name>
+            <title>seharusnya membuat data dengan karakter alfanumerik</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702390208186' status='passed' stop='1702390208192'>
+            <name>seharusnya membuat data dengan karakter numerik</name>
+            <title>seharusnya membuat data dengan karakter numerik</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702390208192' status='passed' stop='1702390208200'>
+            <name>seharusnya membuat data dengan gambar kosong</name>
+            <title>seharusnya membuat data dengan gambar kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702390208200' status='passed' stop='1702390208208'>
+            <name>seharusnya membuat data dengan jenis tiket kosong</name>
+            <title>seharusnya membuat data dengan jenis tiket kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702390208208' status='passed' stop='1702390208215'>
+            <name>seharusnya membuat data dengan harga kosong</name>
+            <title>seharusnya membuat data dengan harga kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702390208215' status='passed' stop='1702390208221'>
+            <name>seharusnya membuat data dengan keterangan kosong</name>
+            <title>seharusnya membuat data dengan keterangan kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702390208221' status='passed' stop='1702390208227'>
+            <name>seharusnya membuat data dengan stok kosong</name>
+            <title>seharusnya membuat data dengan stok kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702390208227' status='passed' stop='1702390208235'>
+            <name>seharusnya membuat data dengan karakter alfanumerik kosong</name>
+            <title>seharusnya membuat data dengan karakter alfanumerik kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702390208235' status='passed' stop='1702390208243'>
+            <name>seharusnya membuat data dengan karakter alfanumerik</name>
+            <title>seharusnya membuat data dengan karakter alfanumerik</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702390208243' status='passed' stop='1702390208250'>
+            <name>seharusnya membuat data dengan karakter alfanumerik khusus</name>
+            <title>seharusnya membuat data dengan karakter alfanumerik khusus</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

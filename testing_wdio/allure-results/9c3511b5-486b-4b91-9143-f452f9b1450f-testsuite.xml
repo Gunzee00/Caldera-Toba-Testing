@@ -1,0 +1,175 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1702388193176' stop='1702388193297'>
+    <name>Update Artikel API Test</name>
+    <title>Update Artikel API Test</title>
+    <test-cases>
+        <test-case start='1702388193177' status='passed' stop='1702388193182'>
+            <name>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel</name>
+            <title>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193182' status='passed' stop='1702388193188'>
+            <name>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan gambar kosong</name>
+            <title>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan gambar kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193188' status='passed' stop='1702388193195'>
+            <name>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan deskripsi kosong</name>
+            <title>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan deskripsi kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193195' status='passed' stop='1702388193200'>
+            <name>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan judul_artikel kosong</name>
+            <title>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan judul_artikel kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193200' status='passed' stop='1702388193206'>
+            <name>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan gambar dan deskripsi kosong</name>
+            <title>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan gambar dan deskripsi kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193207' status='passed' stop='1702388193213'>
+            <name>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan gambar dan judul_artikel kosong</name>
+            <title>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan gambar dan judul_artikel kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193213' status='passed' stop='1702388193219'>
+            <name>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan gambar, deskripsi, dan judul_artikel kosong</name>
+            <title>harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel, dengan gambar, deskripsi, dan judul_artikel kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193219' status='passed' stop='1702388193225'>
+            <name>harus memperbarui artikel dengan 1234.jpg, 12345, dan 12345</name>
+            <title>harus memperbarui artikel dengan 1234.jpg, 12345, dan 12345</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193225' status='passed' stop='1702388193231'>
+            <name>harus memperbarui artikel dengan gambar kosong, deskripsi 12345, dan judul_artikel 12345</name>
+            <title>harus memperbarui artikel dengan gambar kosong, deskripsi 12345, dan judul_artikel 12345</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193231' status='passed' stop='1702388193236'>
+            <name>harus memperbarui artikel dengan gambar 12345.jpg, deskripsi kosong, dan judul_artikel 12345</name>
+            <title>harus memperbarui artikel dengan gambar 12345.jpg, deskripsi kosong, dan judul_artikel 12345</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193236' status='passed' stop='1702388193242'>
+            <name>harus memperbarui artikel dengan gambar 12345.jpg, deskripsi 12345, dan judul_artikel kosong</name>
+            <title>harus memperbarui artikel dengan gambar 12345.jpg, deskripsi 12345, dan judul_artikel kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193242' status='passed' stop='1702388193248'>
+            <name>harus memperbarui artikel dengan gambar kosong, deskripsi kosong, dan judul_artikel 12345</name>
+            <title>harus memperbarui artikel dengan gambar kosong, deskripsi kosong, dan judul_artikel 12345</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193248' status='passed' stop='1702388193253'>
+            <name>harus memperbarui artikel dengan gambar 12345.jpg, deskripsi kosong, dan judul_artikel kosong</name>
+            <title>harus memperbarui artikel dengan gambar 12345.jpg, deskripsi kosong, dan judul_artikel kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193253' status='passed' stop='1702388193259'>
+            <name>harus memperbarui artikel dengan gambar kosong, deskripsi kosong, dan judul_artikel kosong</name>
+            <title>harus memperbarui artikel dengan gambar kosong, deskripsi kosong, dan judul_artikel kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193259' status='passed' stop='1702388193265'>
+            <name>harus memperbarui artikel dengan !@#!$%.jpg, !@#!$%, dan !@#!$%</name>
+            <title>harus memperbarui artikel dengan !@#!$%.jpg, !@#!$%, dan !@#!$%</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193265' status='passed' stop='1702388193270'>
+            <name>harus memperbarui artikel dengan gambar kosong, !@#!$%, dan !@#!$%</name>
+            <title>harus memperbarui artikel dengan gambar kosong, !@#!$%, dan !@#!$%</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193270' status='passed' stop='1702388193276'>
+            <name>harus memperbarui artikel dengan !@#!$%.jpg, deskripsi kosong, dan !@#!$%</name>
+            <title>harus memperbarui artikel dengan !@#!$%.jpg, deskripsi kosong, dan !@#!$%</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193277' status='passed' stop='1702388193281'>
+            <name>harus memperbarui artikel dengan !@#!$%.jpg, !@#!$%, dan judul_artikel kosong</name>
+            <title>harus memperbarui artikel dengan !@#!$%.jpg, !@#!$%, dan judul_artikel kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193281' status='passed' stop='1702388193286'>
+            <name>harus memperbarui artikel dengan gambar kosong, deskripsi kosong, dan !@#!$%</name>
+            <title>harus memperbarui artikel dengan gambar kosong, deskripsi kosong, dan !@#!$%</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193287' status='passed' stop='1702388193292'>
+            <name>harus memperbarui artikel dengan !@#!$%.jpg, deskripsi kosong, dan judul_artikel kosong</name>
+            <title>harus memperbarui artikel dengan !@#!$%.jpg, deskripsi kosong, dan judul_artikel kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193292' status='passed' stop='1702388193297'>
+            <name>harus memperbarui artikel dengan gambar kosong, deskripsi kosong, dan judul_artikel kosong</name>
+            <title>harus memperbarui artikel dengan gambar kosong, deskripsi kosong, dan judul_artikel kosong</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1702390003359' stop='1702390003380'>
+    <name>Delete Detail Pesanan API Test</name>
+    <title>Delete Detail Pesanan API Test</title>
+    <test-cases>
+        <test-case start='1702390003359' status='passed' stop='1702390003380'>
+            <name>should delete an Detail Pesanan and return status code 200</name>
+            <title>should delete an Detail Pesanan and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

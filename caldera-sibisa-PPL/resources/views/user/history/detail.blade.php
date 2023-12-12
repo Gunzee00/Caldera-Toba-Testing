@@ -190,7 +190,7 @@
                                     <td><strong><a href="{{ url('/upload/'.$pesanan->id) }}"><button class="btn btn-secondary">Masukkan Bukti Pembayaran</button></a></strong></td>
                                     @else
                                     
-                                    <td><strong><a href="{{ url('productimage') }}/{{ $pesanan->bukti_pembayaran }}"><button class="btn btn-warning" disabled><b>Bukti Telah dikirim </b></button></a></strong></td>
+                                    <td><strong><a href="{{ url('productmage') }}/{{ $pesanan->bukti_pembayaran }}"><button class="btn btn-warning" disabled><b>Bukti Telah dikirim </b></button></a></strong></td>
                                     <td><strong><a href="{{ url('/edit-upload/'.$pesanan->id) }}"><button class="btn btn-secondary">Ubah Bukti Pembayaran</button></a></strong></td>
 
                                     @endif

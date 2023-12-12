@@ -1,0 +1,135 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1702389564473' stop='1702389564572'>
+    <name>Update Kamar API Test</name>
+    <title>Update Kamar API Test</title>
+    <test-cases>
+        <test-case start='1702389564473' status='passed' stop='1702389564481'>
+            <name>should update a kamar with id 38 and return status code 200</name>
+            <title>should update a kamar with id 38 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564481' status='passed' stop='1702389564490'>
+            <name>should update a kamar with id 39 and return status code 200</name>
+            <title>should update a kamar with id 39 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564490' status='passed' stop='1702389564496'>
+            <name>should update a kamar with id 40 and return status code 200</name>
+            <title>should update a kamar with id 40 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564496' status='passed' stop='1702389564503'>
+            <name>should update a kamar with id 41 and return status code 200</name>
+            <title>should update a kamar with id 41 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564504' status='passed' stop='1702389564508'>
+            <name>should update a kamar with id 42 and return status code 200</name>
+            <title>should update a kamar with id 42 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564509' status='passed' stop='1702389564515'>
+            <name>should update a kamar with id 43 and return status code 200</name>
+            <title>should update a kamar with id 43 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564515' status='passed' stop='1702389564521'>
+            <name>should update a kamar with id 44 and return status code 200</name>
+            <title>should update a kamar with id 44 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564521' status='passed' stop='1702389564527'>
+            <name>should update a kamar with id 45 and return status code 200</name>
+            <title>should update a kamar with id 45 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564527' status='passed' stop='1702389564533'>
+            <name>should update a kamar with id 46 and return status code 200</name>
+            <title>should update a kamar with id 46 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564534' status='passed' stop='1702389564539'>
+            <name>should update a kamar with id 47 and return status code 200</name>
+            <title>should update a kamar with id 47 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564540' status='passed' stop='1702389564545'>
+            <name>should update a kamar with id 48 and return status code 200</name>
+            <title>should update a kamar with id 48 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564546' status='passed' stop='1702389564551'>
+            <name>should update a kamar with id 49 and return status code 200</name>
+            <title>should update a kamar with id 49 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564552' status='passed' stop='1702389564557'>
+            <name>should update a kamar with id 50 and return status code 200</name>
+            <title>should update a kamar with id 50 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564557' status='passed' stop='1702389564563'>
+            <name>should update a kamar with id 51 and return status code 200</name>
+            <title>should update a kamar with id 51 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564564' status='passed' stop='1702389564569'>
+            <name>should update a kamar with id 52 and return status code 200</name>
+            <title>should update a kamar with id 52 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389564569' status='passed' stop='1702389564572'>
+            <name>should update a kamar with id 53 and return status code 200</name>
+            <title>should update a kamar with id 53 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

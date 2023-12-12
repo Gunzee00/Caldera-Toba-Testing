@@ -1,0 +1,191 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1702389059918' stop='1702389060016'>
+    <name>Update Data Pengunjung API Test</name>
+    <title>Update Data Pengunjung API Test</title>
+    <test-cases>
+        <test-case start='1702389059918' status='passed' stop='1702389059922'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059923' status='passed' stop='1702389059927'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059927' status='passed' stop='1702389059931'>
+            <name>should create an article with numeric characters</name>
+            <title>should create an article with numeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059931' status='passed' stop='1702389059935'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059935' status='passed' stop='1702389059939'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059939' status='passed' stop='1702389059943'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059943' status='passed' stop='1702389059947'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059947' status='passed' stop='1702389059951'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059952' status='passed' stop='1702389059955'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059955' status='passed' stop='1702389059959'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059959' status='passed' stop='1702389059963'>
+            <name>should create an article with numeric characters</name>
+            <title>should create an article with numeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059963' status='passed' stop='1702389059967'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059967' status='passed' stop='1702389059972'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059972' status='passed' stop='1702389059976'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059976' status='passed' stop='1702389059979'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059979' status='passed' stop='1702389059983'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059983' status='passed' stop='1702389059987'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059988' status='passed' stop='1702389059992'>
+            <name>should create an article with numeric characters</name>
+            <title>should create an article with numeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059992' status='passed' stop='1702389059996'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389059996' status='passed' stop='1702389060001'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389060001' status='passed' stop='1702389060005'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389060005' status='passed' stop='1702389060010'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389060010' status='passed' stop='1702389060016'>
+            <name>should create an article with alphanumeric characters</name>
+            <title>should create an article with alphanumeric characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

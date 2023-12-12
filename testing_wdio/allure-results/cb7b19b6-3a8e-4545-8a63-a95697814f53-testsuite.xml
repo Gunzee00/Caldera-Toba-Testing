@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1702388193065' stop='1702388193175'>
+    <name>API Tests</name>
+    <title>API Tests</title>
+    <test-cases>
+        <test-case start='1702388193065' status='passed' stop='1702388193113'>
+            <name>should return status code 200 for readdataartikel</name>
+            <title>should return status code 200 for readdataartikel</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

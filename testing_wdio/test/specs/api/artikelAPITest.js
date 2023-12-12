@@ -3,143 +3,287 @@
 import axios from 'axios';
 import assert from 'assert';
 
-// //get data
+// // // // //get data
 
-// describe('API Test', () => {
-//   beforeEach(function () {
-//     this.timeout(5000);
-//   });
+describe('API Test', () => {
+  beforeEach(function () {
+    this.timeout(5000);
+  });
 
-//   it('should return status code 200', async function () {
+  it('should return status code 200', async function () {
+    try {
+      const response = await axios.get('http://localhost:3002/api/readdataartikel');
+
+      assert.strictEqual(response.status, 200);
+      console.log('Data berhasil ditampilkan:', response.data);
+    } catch (error) {
+      throw error;
+    }
+  });
+});
+
+
+// // //create data
+
+
+// describe('Create Artikel API Test', () => {
+//   it('should create an article and return status code 200', async () => {
+  
+//     const postData = {
+//       gambar: 'TisDaSeasonjpg',
+//       deskripsi: 'Its the time of the year',
+//       judul_artikel: 'Feastivus Strikes Back',
+//     };
+
 //     try {
-//       const response = await axios.get('http://localhost:3007/api/readpesanans');
+//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+
 
 //       assert.strictEqual(response.status, 200);
-//       console.log('Response Data:', response.data);
+//       assert.ok(response.data); 
+
+//       console.log('Data artikel berhasil di create:', response.data);
 //     } catch (error) {
+//       console.error('Error creating article:', error.message);
 //       throw error;
 //     }
 //   });
 // });
 
 
-//create data
-
-
-describe('Create Artikel API Test', () => {
-  it('should create an article and return status code 200', async () => {
+// // // //gambar kosong
+// describe('Create Artikel API Test', () => {
+//   it('should create an article and return status code 200', async () => {
   
-    const postData = {
-      gambar: 'TisDaSeason.jpg',
-      deskripsi: 'Its the time of the year...',
-      judul_artikel: 'Feastivus Strikes Back',
-    };
+//     const postData = {
+//       gambar: '',
+//       deskripsi: 'Its the time of the year',
+//       judul_artikel: 'Feastivus Strikes Back',
+//     };
 
+//     try {
+//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+
+
+//       assert.strictEqual(response.status, 200);
+//       assert.ok(response.data); 
+
+//       console.log('Article created successfully:', response.data);
+//     } catch (error) {
+//       console.error('Error creating article:', error.message);
+//       throw error;
+//     }
+//   });
+// });
+
+// // // //deskripsi kosong
+// describe('Create Artikel API Test', () => {
+//   it('should create an article and return status code 200', async () => {
+  
+//     const postData = {
+//       gambar: 'gambar',
+//       deskripsi: '',
+//       judul_artikel: 'Feastivus Strikes Back',
+//     };
+
+//     try {
+//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+//       assert.strictEqual(response.status, 200);
+//       assert.ok(response.data); 
+//       console.log('Article created successfully:', response.data);
+//     } catch (error) {
+//       console.error('Error creating article:', error.message);
+//       throw error;
+//     }
+//   });
+// });
+
+// // //judul artikel kosong
+// describe('Create Artikel API Test', () => {
+//   it('should create an article and return status code 200', async () => {
+  
+//     const postData = {
+//       gambar: 'gambar',
+//       deskripsi: 'deskripsi artikel',
+//       judul_artikel: '',
+//     };
+
+//     try {
+//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+
+
+//       assert.strictEqual(response.status, 200);
+//       assert.ok(response.data); 
+
+//       console.log('Article created successfully:', response.data);
+//     } catch (error) {
+//       console.error('Error creating article:', error.message);
+//       throw error;
+//     }
+//   });
+// });
+
+// // //gambar & deskripsi kosong
+// describe('Create Artikel API Test', () => {
+//   it('should create an article and return status code 200', async () => {
+  
+//     const postData = {
+//       gambar: '',
+//       deskripsi: '',
+//       judul_artikel: 'Feastivus Strikes Back',
+//     };
+
+//     try {
+//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+
+
+//         assert.strictEqual(response.status, 200);
+//         assert.ok(response.data);
+
+//         console.log('Artikel berhasil dibuat:', response.data);
+//       } catch (error) {
+//         console.error('Error saat membuat artikel:', error.message);
+//         throw error;
+//       }
+//     });
+//   });
+
+describe('API Tests', () => {
+  beforeEach(function () {
+    this.timeout(5000);
+  });
+
+  it('should return status code 200 for readdataartikel', async function () {
     try {
-      const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-
-
+      const response = await axios.get('http://localhost:3002/api/readdataartikel');
       assert.strictEqual(response.status, 200);
-      assert.ok(response.data); 
-
-      console.log('Article created successfully:', response.data);
+      console.log('Data berhasil ditampilkan:', response.data);
     } catch (error) {
-      console.error('Error creating article:', error.message);
       throw error;
     }
   });
-});
 
+  describe('Create Artikel API Tests', () => {
+    it('should create an article with valid data', async () => {
+      const postData = {
+        gambar: 'TisDaSeasonjpg',
+        deskripsi: 'Its the time of the year',
+        judul_artikel: 'Feastivus Strikes Back',
+      };
 
-//gambar kosong
-describe('Create Artikel API Test', () => {
-  it('should create an article and return status code 200', async () => {
-  
-    const postData = {
-      gambar: '',
-      deskripsi: 'Its the time of the year...',
-      judul_artikel: 'Feastivus Strikes Back',
-    };
-
-    try {
-      const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-
-
-      assert.strictEqual(response.status, 200);
-      assert.ok(response.data); 
-
-      console.log('Article created successfully:', response.data);
-    } catch (error) {
-      console.error('Error creating article:', error.message);
-      throw error;
-    }
-  });
-});
-
-//deskripsi kosong
-describe('Create Artikel API Test', () => {
-  it('should create an article and return status code 200', async () => {
-  
-    const postData = {
-      gambar: 'gambar',
-      deskripsi: '',
-      judul_artikel: 'Feastivus Strikes Back',
-    };
-
-    try {
-      const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-      assert.strictEqual(response.status, 200);
-      assert.ok(response.data); 
-      console.log('Article created successfully:', response.data);
-    } catch (error) {
-      console.error('Error creating article:', error.message);
-      throw error;
-    }
-  });
-});
-
-//judul artikel kosong
-describe('Create Artikel API Test', () => {
-  it('should create an article and return status code 200', async () => {
-  
-    const postData = {
-      gambar: 'gambar',
-      deskripsi: 'deskripsi artikel',
-      judul_artikel: '',
-    };
-
-    try {
-      const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-
-
-      assert.strictEqual(response.status, 200);
-      assert.ok(response.data); 
-
-      console.log('Article created successfully:', response.data);
-    } catch (error) {
-      console.error('Error creating article:', error.message);
-      throw error;
-    }
-  });
-});
-
-//gambar & deskripsi kosong
-describe('Create Artikel API Test', () => {
-  it('should create an article and return status code 200', async () => {
-  
-    const postData = {
-      gambar: '',
-      deskripsi: '',
-      judul_artikel: 'Feastivus Strikes Back',
-    };
-
-    try {
-      const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-
-
+      try {
+        const response = await axios.post('http://localhost:3002/api/createartikel', postData);
         assert.strictEqual(response.status, 200);
         assert.ok(response.data);
+        console.log('Data artikel berhasil di create:', response.data);
+      } catch (error) {
+        console.error('Error creating article:', error.message);
+        throw error;
+      }
+    });
 
+    it('should handle case where gambar is empty', async () => {
+      const postData = {
+        gambar: '',
+        deskripsi: 'Its the time of the year',
+        judul_artikel: 'Feastivus Strikes Back',
+      };
+
+      try {
+        const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+        assert.strictEqual(response.status, 200);
+        assert.ok(response.data);
+        console.log('Article created successfully:', response.data);
+      } catch (error) {
+        console.error('Error creating article:', error.message);
+        throw error;
+      }
+    });
+
+    it('should handle case where deskripsi is empty', async () => {
+      const postData = {
+        gambar: 'gambar',
+        deskripsi: '',
+        judul_artikel: 'Feastivus Strikes Back',
+      };
+
+      try {
+        const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+        assert.strictEqual(response.status, 200);
+        assert.ok(response.data);
+        console.log('Article created successfully:', response.data);
+      } catch (error) {
+        console.error('Error creating article:', error.message);
+        throw error;
+      }
+    });
+
+    it('should handle case where judul_artikel is empty', async () => {
+      const postData = {
+        gambar: 'gambar',
+        deskripsi: 'deskripsi artikel',
+        judul_artikel: '',
+      };
+
+      try {
+        const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+        assert.strictEqual(response.status, 200);
+        assert.ok(response.data);
+        console.log('Article created successfully:', response.data);
+      } catch (error) {
+        console.error('Error creating article:', error.message);
+        throw error;
+      }
+    });
+
+    it('should handle case where gambar and deskripsi are empty', async () => {
+      const postData = {
+        gambar: '',
+        deskripsi: '',
+        judul_artikel: '',
+      };
+
+      try {
+        const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+        assert.strictEqual(response.status, 200);
+        assert.ok(response.data);
+        console.log('Artikel berhasil dibuat:', response.data);
+      } catch (error) {
+        console.error('Error saat membuat artikel:', error.message);
+        throw error;
+      }
+    });
+
+    
+    it('should handle case where gambar and deskripsi are empty', async () => {
+      const postData = {
+        gambar: '12345',
+        deskripsi: '12314',
+        judul_artikel: '123124',
+      };
+
+      try {
+        const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+        assert.strictEqual(response.status, 200);
+        assert.ok(response.data);
+        console.log('Artikel berhasil dibuat:', response.data);
+      } catch (error) {
+        console.error('Error saat membuat artikel:', error.message);
+        throw error;
+      }
+    });
+    
+    it('should handle case where gambar and deskripsi are empty', async () => {
+      const postData = {
+        gambar: '!@#!$%',
+        deskripsi: '!@#!$%',
+        judul_artikel: '!@#$%',
+      };
+
+      try {
+        const response = await axios.post('http://localhost:3002/api/createartikel', postData);
+        assert.strictEqual(response.status, 200);
+        assert.ok(response.data);
         console.log('Artikel berhasil dibuat:', response.data);
       } catch (error) {
         console.error('Error saat membuat artikel:', error.message);
@@ -147,10 +291,11 @@ describe('Create Artikel API Test', () => {
       }
     });
   });
+});
 
 
 
-// //update data 
+// // //update data 
 describe('Update Artikel API Test', () => {
   const articleIdToUpdate = 11; // Update this with the correct article ID
 
@@ -352,23 +497,23 @@ describe('Update Artikel API Test', () => {
 
 
 
-// // //delete data
+// // // // //delete data
 
-// describe('Delete Artikel API Test', () => {
-//   it('should delete an article and return status code 200', async () => {
-//     const articleIdToDelete = 10; 
+describe('Delete Artikel API Test', () => {
+  it('should delete an article and return status code 200', async () => {
+    const articleIdToDelete = 10; 
 
-//     try {
-//       const response = await axios.delete('http://localhost:3002/api/deleteartikel', {
-//         data: { id_artikel: articleIdToDelete },
-//       });
+    try {
+      const response = await axios.delete('http://localhost:3002/api/deleteartikel', {
+        data: { id_artikel: articleIdToDelete },
+      });
 
-//       assert.strictEqual(response.status, 200);
-//       assert.ok(response.data); 
-//       console.log('Article deleted successfully:', response.data);
-//     } catch (error) {
-//       console.error('Error deleting article:', error.message);
-//       throw error;
-//     }
-//   });
-// });
+      assert.strictEqual(response.status, 200);
+      assert.ok(response.data); 
+      console.log('Article deleted successfully:', response.data);
+    } catch (error) {
+      console.error('Error deleting article:', error.message);
+      throw error;
+    }
+  });
+});

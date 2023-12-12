@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1702388193114' stop='1702388193172'>
+    <name>API Tests Create Artikel API Tests</name>
+    <title>API Tests Create Artikel API Tests</title>
+    <test-cases>
+        <test-case start='1702388193114' status='passed' stop='1702388193135'>
+            <name>should create an article with valid data</name>
+            <title>should create an article with valid data</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193135' status='passed' stop='1702388193141'>
+            <name>should handle case where gambar is empty</name>
+            <title>should handle case where gambar is empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193141' status='passed' stop='1702388193147'>
+            <name>should handle case where deskripsi is empty</name>
+            <title>should handle case where deskripsi is empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193147' status='passed' stop='1702388193153'>
+            <name>should handle case where judul_artikel is empty</name>
+            <title>should handle case where judul_artikel is empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193153' status='passed' stop='1702388193160'>
+            <name>should handle case where gambar and deskripsi are empty</name>
+            <title>should handle case where gambar and deskripsi are empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193160' status='passed' stop='1702388193165'>
+            <name>should handle case where gambar and deskripsi are empty</name>
+            <title>should handle case where gambar and deskripsi are empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702388193165' status='passed' stop='1702388193172'>
+            <name>should handle case where gambar and deskripsi are empty</name>
+            <title>should handle case where gambar and deskripsi are empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

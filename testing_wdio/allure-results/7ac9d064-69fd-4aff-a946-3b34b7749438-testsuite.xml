@@ -1,0 +1,191 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1702389350909' stop='1702389351076'>
+    <name>Create Galeri API Test</name>
+    <title>Create Galeri API Test</title>
+    <test-cases>
+        <test-case start='1702389350909' status='passed' stop='1702389350940'>
+            <name>should create an article 1 and return status code 200</name>
+            <title>should create an article 1 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350940' status='passed' stop='1702389350946'>
+            <name>should create an article 2 and return status code 200</name>
+            <title>should create an article 2 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350946' status='passed' stop='1702389350951'>
+            <name>should create an article 3 and return status code 200</name>
+            <title>should create an article 3 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350951' status='passed' stop='1702389350957'>
+            <name>should create an article 4 and return status code 200</name>
+            <title>should create an article 4 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350958' status='passed' stop='1702389350964'>
+            <name>should create an article 5 and return status code 200</name>
+            <title>should create an article 5 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350964' status='passed' stop='1702389350970'>
+            <name>should create an article 6 and return status code 200</name>
+            <title>should create an article 6 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350970' status='passed' stop='1702389350976'>
+            <name>should create an article 7 and return status code 200</name>
+            <title>should create an article 7 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350976' status='passed' stop='1702389350983'>
+            <name>should create an article 8 and return status code 200</name>
+            <title>should create an article 8 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350983' status='passed' stop='1702389350990'>
+            <name>should create an article 9 and return status code 200</name>
+            <title>should create an article 9 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350990' status='passed' stop='1702389350997'>
+            <name>should create an article 10 and return status code 200</name>
+            <title>should create an article 10 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389350997' status='passed' stop='1702389351004'>
+            <name>should create an article 11 and return status code 200</name>
+            <title>should create an article 11 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351004' status='passed' stop='1702389351010'>
+            <name>should create an article 12 and return status code 200</name>
+            <title>should create an article 12 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351010' status='passed' stop='1702389351018'>
+            <name>should create an article 13 and return status code 200</name>
+            <title>should create an article 13 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351018' status='passed' stop='1702389351025'>
+            <name>should create an article 14 and return status code 200</name>
+            <title>should create an article 14 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351025' status='passed' stop='1702389351030'>
+            <name>should create an article 15 and return status code 200</name>
+            <title>should create an article 15 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351030' status='passed' stop='1702389351036'>
+            <name>should create an article 16 and return status code 200</name>
+            <title>should create an article 16 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351036' status='passed' stop='1702389351042'>
+            <name>should create an article 17 and return status code 200</name>
+            <title>should create an article 17 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351042' status='passed' stop='1702389351048'>
+            <name>should create an article 18 and return status code 200</name>
+            <title>should create an article 18 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351048' status='passed' stop='1702389351054'>
+            <name>should create an article 19 and return status code 200</name>
+            <title>should create an article 19 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351054' status='passed' stop='1702389351060'>
+            <name>should create an article 20 and return status code 200</name>
+            <title>should create an article 20 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351060' status='passed' stop='1702389351065'>
+            <name>should create an article 21 and return status code 200</name>
+            <title>should create an article 21 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351065' status='passed' stop='1702389351070'>
+            <name>should create an article 22 and return status code 200</name>
+            <title>should create an article 22 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1702389351070' status='passed' stop='1702389351076'>
+            <name>should create an article 23 and return status code 200</name>
+            <title>should create an article 23 and return status code 200</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
