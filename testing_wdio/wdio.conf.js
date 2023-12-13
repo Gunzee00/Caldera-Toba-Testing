@@ -23,7 +23,7 @@ export const config = {
     //
     specs: [
         //all
-        './test/specs/ui/galeriTest.js'
+        './test/specs/ui/pesanan1Test.js'
         //ui login
         // './test/specs/ui/loginTest.spec.js',
         //ui Tiket User
