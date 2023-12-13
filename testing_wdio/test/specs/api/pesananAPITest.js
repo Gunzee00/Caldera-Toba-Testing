@@ -42,9 +42,9 @@ import assert from 'assert';
 // //       assert.strictEqual(response.status, 200);
 // //       assert.ok(response.data); 
 
-// //       console.log('Article created successfully:', response.data);
+// //       console.log('Data berhasil dibuat:', response.data);
 // //     } catch (error) {
-// //       console.error('Error creating article:', error.message);
+// //       console.error('Data gagal dibuat:', error.message);
 // //       throw error;
 // //     }
 // //   });
@@ -67,9 +67,9 @@ import assert from 'assert';
 // //       assert.strictEqual(response.status, 200);
 // //       assert.ok(response.data); // Ensure response.data is not undefined
 
-// //       console.log('Article updated successfully:', response.data);
+// //       console.log('Data berhasil diperbarui:', response.data);
 // //     } catch (error) {
-// //       console.error('Error updating article:', error.message);
+// //       console.error('Data gagal diperbarui:', error.message);
 // //       if (error.response) {
 // //         // Log additional information if available
 // //         console.error('Server responded with:', error.response.status, error.response.data);

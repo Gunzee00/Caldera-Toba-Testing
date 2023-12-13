@@ -11,9 +11,9 @@ describe('API Test', () => {
       try {
           const response = await axios.get('http://localhost:3005/api/readtiket');
           assert.strictEqual(response.status, 200);
-          console.log('Response Data:', response.data);
+          console.log('Data tiket berhasil ditampilkan:', response.data);
       } catch (error) {
-          console.error('Test failed with error:', error.message);
+          console.error('Data tiket gagal ditampilkan:', error.message);
           throw error;
       }
   });
@@ -133,9 +133,9 @@ describe('Create Data API Test', () => {
         assert.strictEqual(response.status, 200);
         assert.ok(response.data);
 
-        console.log('Data created successfully:', response.data);
+        console.log('Data tiket berhasil dibuat:', response.data);
       } catch (error) {
-        console.error('Error creating data:', error.message);
+        console.error('Data tiket gagal dibuat:', error.message);
       }
     });
   });
@@ -220,9 +220,9 @@ describe('Create Data API Test', () => {
 //         assert.strictEqual(response.status, 200);
 //         assert.ok(response.data); // Ensure response.data is not undefined
 
-//         console.log(`Ticket updated successfully with test case ${index + 1}:`, response.data);
+//         console.log(`Data tiket berhasil diupdate dengan test case ${index + 1}:`, response.data);
 //       } catch (error) {
-//         console.error(`Error updating Tiket with test case ${index + 1}:`, error.message);
+//         console.error(`Data tiket gagal diupdate dengan test case ${index + 1}:`, error.message);
 //         if (error.response) {
 //           console.error('Server responded with:', error.response.status, error.response.data);
 //         }
@@ -351,9 +351,9 @@ describe('Update Tiket API Test', () => {
         assert.strictEqual(response.status, 200);
         assert.ok(response.data); // Ensure response.data is not undefined
 
-        console.log(`${description}: Article updated successfully with test case ${index + 1}:`, response.data);
+        console.log(`${description}: Data tiket berhasil diupdate dengan test case ${index + 1}:`, response.data);
       } catch (error) {
-        console.error(`${description}: Error updating article with test case ${index + 1}:`, error.message);
+        console.error(`${description}: Data tiket gagal diupdate dengan test case ${index + 1}:`, error.message);
         if (error.response) {
           console.error('Server responded with:', error.response.status, error.response.data);
         }
@@ -380,17 +380,17 @@ describe('Delete Tiket API Test', () => {
       assert.strictEqual(response.status, 200);
       assert.ok(response.data); // Check if response.data is truthy
 
-      console.log('Artikel berhasil dihapus :', response.data);
+      console.log('Data tiket berhasil dihapus :', response.data);
     } catch (error) {
-      console.error('Error deleting article:', error.message);
+      console.error('Data tiket gagal dihapus:', error.message);
       throw error;
     }
   });
 });
 
-//       console.log('Tiket deleted successfully:', response.data);
+//       console.log('Data tiket berhasil dihapus:', response.data);
 //     } catch (error) {
-//       console.error('Error deleting Tiket:', error.message);
+//       console.error('Data tiket gagal dihapus:', error.message);
 //       throw error;
 //     }
 //   });
