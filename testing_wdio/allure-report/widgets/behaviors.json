@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"total":105,"items":[{"uid":"1e569911a0dd59e08749749da60112c5","name":"My Login application","statistic":{"failed":0,"broken":0,"skipped":0,"passed":0,"unknown":1,"total":1}}]}
+=======
+{"total":5,"items":[{"uid":"444508334237835d4b0f806c05644bb5","name":"Pemesanan Tiket: Pemesanan Tiket","statistic":{"failed":2,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":3}},{"uid":"33e01f78c48bd0c543cdf15e43baf711","name":"My Login admin application","statistic":{"failed":0,"broken":0,"skipped":0,"passed":21,"unknown":3,"total":24}},{"uid":"1e569911a0dd59e08749749da60112c5","name":"My Login application","statistic":{"failed":0,"broken":0,"skipped":0,"passed":6,"unknown":0,"total":6}},{"uid":"f43370adb8b3f4115e4ea7b6c4646b3b","name":"Melihat deskripsi kamar","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}},{"uid":"18b7441a4813e517578d3c3ad919595b","name":"Pemesanan Tiket","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
+>>>>>>> b20b0a775313de29cc6a04fb4077900ba56b2930

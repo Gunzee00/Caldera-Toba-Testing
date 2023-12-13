@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#gambar\"}\n  (Session info: chrome=120.0.6099.71)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF6975C4D02+56194]\n\t(No symbol) [0x00007FF6975304B2]\n\t(No symbol) [0x00007FF6973D76AA]\n\t(No symbol) [0x00007FF6974216D0]\n\t(No symbol) [0x00007FF6974217EC]\n\t(No symbol) [0x00007FF697464D77]\n\t(No symbol) [0x00007FF697445EBF]\n\t(No symbol) [0x00007FF697462786]\n\t(No symbol) [0x00007FF697445C23]\n\t(No symbol) [0x00007FF697414A45]\n\t(No symbol) [0x00007FF697415AD4]\n\tGetHandleVerifier [0x00007FF69793D5BB+3695675]\n\tGetHandleVerifier [0x00007FF697996197+4059159]\n\tGetHandleVerifier [0x00007FF69798DF63+4025827]\n\tGetHandleVerifier [0x00007FF69765F029+687785]\n\t(No symbol) [0x00007FF69753B508]\n\t(No symbol) [0x00007FF697537564]\n\t(No symbol) [0x00007FF6975376E9]\n\t(No symbol) [0x00007FF697528094]\n\tBaseThreadInitThunk [0x00007FFD25C3257D+29]\n\tRtlUserThreadStart [0x00007FFD2714AA58+40]\n"
+}
