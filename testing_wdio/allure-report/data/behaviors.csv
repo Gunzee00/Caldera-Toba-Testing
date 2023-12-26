@@ -1,11 +1,7 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-<<<<<<< HEAD
-"","","","0","0","104","0","0"
-"","My Login application","","0","0","0","0","1"
-=======
-"","My Login admin application","","0","0","21","0","3"
-"","My Login application","","0","0","6","0","0"
+"","","","0","0","114","0","0"
+"","My Login admin application","","0","0","22","0","3"
 "","Melihat deskripsi kamar","","0","0","2","0","0"
-"","Pemesanan Tiket","","0","0","1","0","0"
+"","My Login application","","0","0","6","0","0"
 "","Pemesanan Tiket: Pemesanan Tiket","","2","0","1","0","0"
->>>>>>> b20b0a775313de29cc6a04fb4077900ba56b2930
+"","Pemesanan Tiket","","0","0","1","0","0"

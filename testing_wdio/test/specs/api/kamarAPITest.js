@@ -148,30 +148,16 @@ describe('Create Kamar API Test', () => {
         assert.strictEqual(response.status, 200);
         assert.ok(response.data); // Check if response.data is truthy
 
-        console.log(`Kamar created successfully for data set ${index + 1}:`, response.data);
+        console.log(`Data kamar berhasil dicreate ${index + 1}:`, response.data);
       } catch (error) {
-        console.error(`Error creating kamar for data set ${index + 1}:`, error.message);
+        console.error(`Data kamar gagal  dicreate ${index + 1}:`, error.message);
         throw error;
       }
     });
   });
 });
 
-    // Make the POST request
-//     try {
-//       const response = await axios.post('http://localhost:3003/api/createkamar', data);
-
-//       // Assertions
-//       assert.strictEqual(response.status, 200);
-//       assert.ok(response.data); // Check if response.data is truthy
-
-//       console.log(`Kamar created successfully for data set ${index + 1}:`, response.data);
-//     } catch (error) {
-//       console.error(`Error creating kamar for data set ${index + 1}:`, error.message);
-//       throw error;
-//     }
-//   });
-// });
+ 
 
 //update data
 // Data untuk test case Update Kamar API
@@ -302,7 +288,7 @@ describe('Update Kamar API Test', () => {
         assert.strictEqual(response.status, 200);
         assert.ok(response.data);
 
-        console.log(`Kamar updated successfully for data set ${index + 1}:`, response.data);
+        console.log(`Data kamar berhasil diupdate ${index + 1}:`, response.data);
       } catch (error) {
         console.error(`Error updating kamar for data set ${index + 1}:`, error.message);
         throw error;
@@ -312,30 +298,30 @@ describe('Update Kamar API Test', () => {
 });
 
 
-// describe('Update Kamar API Test', () => {
-//   it('should update a kamar and return status code 200', async () => {
-//     const kamarId = 53; // replace this with the actual kamarId
-//     const updateData = {
-//       gambar_kamar: 'updated_kamar53.jpg',
-//       nama_kamar: 'Updated Nama Kamar53',
-//       deskripsi: 'Updated Deskripsi Kamar53',
-//       nomor_telepon: 'Updated Nomor Telepon53',
-//     };
+describe('Update Kamar API Test', () => {
+  it('should update a kamar and return status code 200', async () => {
+    const kamarId = 53; 
+    const updateData = {
+      gambar_kamar: 'updated_kamar53.jpg',
+      nama_kamar: 'Updated Nama Kamar53',
+      deskripsi: 'Updated Deskripsi Kamar53',
+      nomor_telepon: 'Updated Nomor Telepon53',
+    };
 
-//     try {
-//       const response = await axios.put(`http://localhost:3003/api/updatekamar/${kamarId}`, updateData);
+    try {
+      const response = await axios.put(`http://localhost:3003/api/updatekamar/${kamarId}`, updateData);
 
-//       // Assertions
-//       assert.strictEqual(response.status, 200);
-//       assert.ok(response.data);
+      
+      assert.strictEqual(response.status, 200);
+      assert.ok(response.data);
 
-//       console.log('Kamar updated successfully:', response.data);
-//     } catch (error) {
-//       console.error('Error updating kamar:', error.message);
-//       throw error;
-//     }
-//   });
-// });
+      console.log('Kamar updated successfully:', response.data);
+    } catch (error) {
+      console.error('Error updating kamar:', error.message);
+      throw error;
+    }
+  });
+});
 
 
 // //delete data

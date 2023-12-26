@@ -151,9 +151,9 @@ describe('Create Galeri API Test', () => {
         assert.strictEqual(response.status, 200);
         assert.ok(response.data);
 
-        console.log(`Article ${index + 1} created successfully:`, response.data);
+        console.log(` Data galeri berhasil dicreate ${index + 1} `, response.data);
       } catch (error) {
-        console.error(`Error creating article ${index + 1}:`, error.message);
+        console.error(`Data galeri gagal dicreate ${index + 1}:`, error.message);
         throw error;
       }
     });
@@ -180,9 +180,9 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
@@ -208,9 +208,9 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
@@ -236,9 +236,9 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
@@ -264,9 +264,9 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
@@ -292,9 +292,9 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
@@ -320,9 +320,9 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
@@ -348,9 +348,9 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
@@ -376,9 +376,9 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
@@ -404,9 +404,9 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
@@ -432,16 +432,16 @@ describe('Update Galeri API Test', () => {
       assert.strictEqual(response.data.deskripsi_galeri, updateData.deskripsi_galeri);
       assert.strictEqual(response.data.judul_galeri, updateData.judul_galeri);
 
-      console.log(`Gallery with ID ${galeriIdToUpdate} updated successfully:`, response.data);
+      console.log(`Data galeri berhasil diupdate ${galeriIdToUpdate} `, response.data);
     } catch (error) {
-      console.error(`Error updating gallery with ID ${galeriIdToUpdate}:`, error.message);
+      console.error(`Data galeri berhasil diupdate ${galeriIdToUpdate}:`, error.message);
       if (error.response) {
         console.error('Server responded with:', error.response.status, error.response.data);
       }
       throw error;
     }
   });
-  // Continue Test Cases for IDs 22 to 31...
+  
 });
 
 //delete data
@@ -457,9 +457,9 @@ describe('Delete Galeri API Test', () => {
       assert.strictEqual(response.status, 200);
       assert.ok(response.data); 
 
-      console.log('Article deleted successfully:', response.data);
+      console.log('Data galeri berhasil dihapus', response.data);
     } catch (error) {
-      console.error('Error deleting article:', error.message);
+      console.error(' Data galeri gagal dihapus', error.message);
       throw error;
     }
   });

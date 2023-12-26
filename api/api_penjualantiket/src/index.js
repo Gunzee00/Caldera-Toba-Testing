@@ -23,60 +23,39 @@ app.get('/api/readpenjualantiket',(req,res)=>{
 })
 
 
-//create
-app.post('/api/createartikel', (req, res) => {
-    const gambarArtikel = req.body.gambar;
-    const deskripsiArtikel = req.body.deskripsi; 
-    const judulArtikel = req.body.judul_artikel; 
-  
-    const sqlQuery = "INSERT INTO artikel (gambar, deskripsi, judul_artikel) VALUES (?, ?, ?)";
-    db.query(sqlQuery,[gambarArtikel,deskripsiArtikel, judulArtikel ], (err,result)=>{
-        if(err) {
-            console.log(err);
-
-        }else{
-            res.send(result);
-            console.log(result)
-        }
-    })
-  });
-
-  //update
-  app.put('/api/updateartikel/:id', (req, res) => {
-    const articleId = req.params.id;
-    const gambarArtikel = req.body.gambar;
-    const deskripsiArtikel = req.body.deskripsi; 
-    const judulArtikel = req.body.judul_artikel; 
-    
-    const sqlQuery = "UPDATE artikel SET gambar=?, deskripsi=?, judul_artikel=? WHERE id_artikel=?";
-    db.query(sqlQuery, [gambarArtikel, deskripsiArtikel, judulArtikel, articleId], (err, result) => {
-      if (err) {
-        console.log(err);
-        res.status(500).send(err); // Send an error response to the client
-      } else {
-        res.send(result);
-        console.log(result);
-      }
-    });
-});
-
 
   //delete
 
   app.delete('/api/deletepenjualantiket', (req, res) => {
-    const idPenjualanTiket  = req.body.id; // Fix: Corrected variable name
-    const sqlQuery = "DELETE FROM penjualan_tiket WHERE id = ?";
-  
-    db.query(sqlQuery, [idPenjualanTiket], (err, result) => {
-      if (err) {
-        console.error(err);
-        res.status(500).send("Error deleting penjualan tiket");
-      } else {
-        console.log(result);
-        res.send(result);
-      }
+    const idPenjualanTiket = req.body.id;
+
+    // Periksa apakah penjualan tiket dengan ID yang diminta ada dalam database sebelum melakukan delete
+    const checkQuery = "SELECT * FROM penjualan_tiket WHERE id = ?";
+    db.query(checkQuery, [idPenjualanTiket], (checkErr, checkResult) => {
+        if (checkErr) {
+            console.log(checkErr);
+            return res.status(500).send("Internal Server Error");
+        }
+
+        // Penjualan tiket tidak ditemukan dalam database
+        if (checkResult.length === 0) {
+            return res.status(404).send("Penjualan tiket not found");
+        }
+
+        // Lakukan delete jika penjualan tiket ditemukan
+        const sqlQuery = "DELETE FROM penjualan_tiket WHERE id = ?";
+        db.query(sqlQuery, [idPenjualanTiket], (err, result) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send("Error deleting penjualan tiket");
+            } else {
+                console.log(result);
+                res.send(result);
+            }
+        });
     });
-  });
+});
+
   
 
 

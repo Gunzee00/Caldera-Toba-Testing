@@ -3,7 +3,7 @@
 import axios from 'axios';
 import assert from 'assert';
 
-// // // // //get data
+//get data
 
 describe('API Test', () => {
   beforeEach(function () {
@@ -23,152 +23,15 @@ describe('API Test', () => {
 });
 
 
-// // //create data
 
 
-// describe('Create Artikel API Test', () => {
-//   it('should create an article and return status code 200', async () => {
-  
-//     const postData = {
-//       gambar: 'TisDaSeasonjpg',
-//       deskripsi: 'Its the time of the year',
-//       judul_artikel: 'Feastivus Strikes Back',
-//     };
-
-//     try {
-//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-
-
-//       assert.strictEqual(response.status, 200);
-//       assert.ok(response.data); 
-
-//       console.log('Data artikel berhasil di create:', response.data);
-//     } catch (error) {
-//       console.error('Error creating article:', error.message);
-//       throw error;
-//     }
-//   });
-// });
-
-
-// // // //gambar kosong
-// describe('Create Artikel API Test', () => {
-//   it('should create an article and return status code 200', async () => {
-  
-//     const postData = {
-//       gambar: '',
-//       deskripsi: 'Its the time of the year',
-//       judul_artikel: 'Feastivus Strikes Back',
-//     };
-
-//     try {
-//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-
-
-//       assert.strictEqual(response.status, 200);
-//       assert.ok(response.data); 
-
-//       console.log('Article created successfully:', response.data);
-//     } catch (error) {
-//       console.error('Error creating article:', error.message);
-//       throw error;
-//     }
-//   });
-// });
-
-// // // //deskripsi kosong
-// describe('Create Artikel API Test', () => {
-//   it('should create an article and return status code 200', async () => {
-  
-//     const postData = {
-//       gambar: 'gambar',
-//       deskripsi: '',
-//       judul_artikel: 'Feastivus Strikes Back',
-//     };
-
-//     try {
-//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-//       assert.strictEqual(response.status, 200);
-//       assert.ok(response.data); 
-//       console.log('Article created successfully:', response.data);
-//     } catch (error) {
-//       console.error('Error creating article:', error.message);
-//       throw error;
-//     }
-//   });
-// });
-
-// // //judul artikel kosong
-// describe('Create Artikel API Test', () => {
-//   it('should create an article and return status code 200', async () => {
-  
-//     const postData = {
-//       gambar: 'gambar',
-//       deskripsi: 'deskripsi artikel',
-//       judul_artikel: '',
-//     };
-
-//     try {
-//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-
-
-//       assert.strictEqual(response.status, 200);
-//       assert.ok(response.data); 
-
-//       console.log('Article created successfully:', response.data);
-//     } catch (error) {
-//       console.error('Error creating article:', error.message);
-//       throw error;
-//     }
-//   });
-// });
-
-// // //gambar & deskripsi kosong
-// describe('Create Artikel API Test', () => {
-//   it('should create an article and return status code 200', async () => {
-  
-//     const postData = {
-//       gambar: '',
-//       deskripsi: '',
-//       judul_artikel: 'Feastivus Strikes Back',
-//     };
-
-//     try {
-//       const response = await axios.post('http://localhost:3002/api/createartikel', postData);
-
-
-//         assert.strictEqual(response.status, 200);
-//         assert.ok(response.data);
-
-//         console.log('Artikel berhasil dibuat:', response.data);
-//       } catch (error) {
-//         console.error('Error saat membuat artikel:', error.message);
-//         throw error;
-//       }
-//     });
-//   });
-
-describe('API Tests', () => {
-  beforeEach(function () {
-    this.timeout(5000);
-  });
-
-  it('should return status code 200 for readdataartikel', async function () {
-    try {
-      const response = await axios.get('http://localhost:3002/api/readdataartikel');
-      assert.strictEqual(response.status, 200);
-      console.log('Data berhasil ditampilkan:', response.data);
-    } catch (error) {
-      throw error;
-    }
-  });
 
   describe('Create Artikel API Tests', () => {
     it('should create an article with valid data', async () => {
       const postData = {
-        gambar: 'TisDaSeasonjpg',
-        deskripsi: 'Its the time of the year',
-        judul_artikel: 'Feastivus Strikes Back',
+        gambar: ' asda',
+        deskripsi: ' sada  ',
+        judul_artikel: ' wqe',
       };
 
       try {
@@ -188,7 +51,6 @@ describe('API Tests', () => {
         deskripsi: 'Its the time of the year',
         judul_artikel: 'Feastivus Strikes Back',
       };
-
       try {
         const response = await axios.post('http://localhost:3002/api/createartikel', postData);
         assert.strictEqual(response.status, 200);
@@ -211,9 +73,9 @@ describe('API Tests', () => {
         const response = await axios.post('http://localhost:3002/api/createartikel', postData);
         assert.strictEqual(response.status, 200);
         assert.ok(response.data);
-        console.log('Article created successfully:', response.data);
+        console.log('Artikel Berhasil ditambahkan:', response.data);
       } catch (error) {
-        console.error('Error creating article:', error.message);
+        console.error('Artikel Gagal Berhasil ditambahkan:', error.message);
         throw error;
       }
     });
@@ -249,7 +111,7 @@ describe('API Tests', () => {
         assert.ok(response.data);
         console.log('Artikel berhasil dibuat:', response.data);
       } catch (error) {
-        console.error('Error saat membuat artikel:', error.message);
+        console.error('Data Artikel gagal dibuat:', error.message);
         throw error;
       }
     });
@@ -286,25 +148,24 @@ describe('API Tests', () => {
         assert.ok(response.data);
         console.log('Artikel berhasil dibuat:', response.data);
       } catch (error) {
-        console.error('Error saat membuat artikel:', error.message);
+        console.error('Gagal membuat artikel:', error.message);
         throw error;
       }
     });
   });
-});
 
 
 
 // // //update data 
 describe('Update Artikel API Test', () => {
-  const articleIdToUpdate = 11; // Update this with the correct article ID
+  const articleIdToUpdate = 1 ; // Update this with the correct article ID
 
   const testCases = [
     {
       description: 'harus memperbarui artikel dengan updated_gambar testing.jpg, updated_contoh, dan Updated Sample Judul Artikel',
       postData: {
         gambar: 'updated_gambar testing.jpg',
-        deskripsi: 'updated_contoh',
+        deskripsi: ' sda',
         judul_artikel: 'Updated Sample Judul Artikel',
       },
     },
@@ -483,9 +344,9 @@ describe('Update Artikel API Test', () => {
         assert.strictEqual(response.status, 200);
         assert.ok(response.data); // Ensure response.data is not undefined
 
-        console.log(`${description}: Article updated successfully with test case ${index + 1}:`, response.data);
+        console.log(`${description}: Data artikel berhasil di update ${index + 1}:`, response.data);
       } catch (error) {
-        console.error(`${description}: Error updating article with test case ${index + 1}:`, error.message);
+        console.error(`${description}: Data gagal artikel berhasil di update ${index + 1}:`, error.message);
         if (error.response) {
           console.error('Server responded with:', error.response.status, error.response.data);
         }
@@ -497,23 +358,35 @@ describe('Update Artikel API Test', () => {
 
 
 
-// // // // //delete data
+// // // // // //delete data
 
-describe('Delete Artikel API Test', () => {
-  it('should delete an article and return status code 200', async () => {
-    const articleIdToDelete = 10; 
+app.delete('/api/deleteartikel', (req, res) => {
+  const idArtikel = req.body.id_artikel;
 
-    try {
-      const response = await axios.delete('http://localhost:3002/api/deleteartikel', {
-        data: { id_artikel: articleIdToDelete },
+  // Periksa apakah artikel dengan ID yang diminta ada dalam database sebelum melakukan delete
+  const checkQuery = "SELECT * FROM artikel WHERE id_artikel = ?";
+  db.query(checkQuery, [idArtikel], (checkErr, checkResult) => {
+      if (checkErr) {
+          console.log(checkErr);
+          return res.status(500).send("Internal Server Error");
+      }
+
+      // Artikel tidak ditemukan dalam database
+      if (checkResult.length === 0) {
+          return res.status(404).send("Article not found");
+      }
+
+      // Lakukan delete jika artikel ditemukan
+      const sqlQuery = "DELETE FROM artikel WHERE id_artikel = ?";
+      db.query(sqlQuery, [idArtikel], (err, result) => {
+          if (err) {
+              console.error(err);
+              res.status(500).send("Error deleting artikel");
+          } else {
+              console.log(result);
+              res.send(result);
+          }
       });
-
-      assert.strictEqual(response.status, 200);
-      assert.ok(response.data); 
-      console.log('Article deleted successfully:', response.data);
-    } catch (error) {
-      console.error('Error deleting article:', error.message);
-      throw error;
-    }
   });
 });
+

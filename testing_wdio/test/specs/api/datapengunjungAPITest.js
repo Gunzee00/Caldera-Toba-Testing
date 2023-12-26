@@ -228,9 +228,9 @@ describe('Create Data API Test', () => {
         assert.strictEqual(response.status, 200);
         assert.ok(response.data);
 
-        console.log('Article created successfully:', response.data);
+        console.log('Data pengunjung berhasil di create', response.data);
       } catch (error) {
-        console.error('Error creating article:', error.message);
+        console.error('Data pengunjung gagal di create', error.message);
         throw error;
       }
     });
@@ -241,7 +241,7 @@ describe('Create Data API Test', () => {
 // //update data (masih error)
 
 describe('Update Data Pengunjung API Test', () => {
-  const dataIdToUpdate = 1; // Update this with the correct data ID
+  const dataIdToUpdate = 82; // Update this with the correct data ID
 
   const testCases = [
     {
@@ -433,7 +433,7 @@ describe('Update Data Pengunjung API Test', () => {
         tempat_tinggal: '',
       },
     },
-    // Add more test cases as needed
+     
   ];
 
   testCases.forEach((testCase, index) => {
@@ -446,9 +446,9 @@ describe('Update Data Pengunjung API Test', () => {
         assert.strictEqual(response.status, 200);
         assert.ok(response.data); // Ensure response.data is not undefined
 
-        console.log(`${description}: Data pengunjung updated successfully with test case ${index + 1}:`, response.data);
+        console.log(`${description}: Data pengunjung berhasil di create  ${index + 1}:`, response.data);
       } catch (error) {
-        console.error(`${description}: Error updating data pengunjung with test case ${index + 1}:`, error.message);
+        console.error(`${description}: Data pengunjung gagal di create ${index + 1}:`, error.message);
         if (error.response) {
           console.error('Server responded with:', error.response.status, error.response.data);
         }

@@ -20,17 +20,17 @@ describe('API Test', () => {
 });
 
 
-// // // Create data
+// Create data
 describe('Create Data API Test', () => {
   const testCases = [
     {
       description: 'seharusnya membuat data dengan karakter alfanumerik',
       postData: {
-        gambar_tiket: 'Tiket contoh.jpg',
-        jenis_tiket: 'contoh jenis',
-        harga: 'harga',
-        keterangan: 'Sample keterangan',
-        stok: 'satu',    
+        gambar_tiket: ' ',
+        jenis_tiket: ' ',
+        harga: ' ',
+        keterangan: ' ',
+        stok: ' ',    
       },
     },
     {
@@ -42,7 +42,7 @@ describe('Create Data API Test', () => {
         keterangan: 'Sample keterangan',
         stok: 'satu',
       },
-    },
+    },  
     {
       description: 'seharusnya membuat data dengan gambar kosong',
       postData: {
@@ -141,98 +141,7 @@ describe('Create Data API Test', () => {
   });
 });
 
-// Update data (fixing the error)
-// describe('Update Tiket API Test', () => {
-//   const tiketIdToUpdate = 11; // Update this with the correct article ID
-
-//   const testCases = [
-//     {
-//       jenis_tiket: 'Updated Jenis Tiket',
-//       gambar_tiket: 'updated_gambar_tiket.jpg',
-//       harga: 100, // replace with the desired updated value
-//       stok: 50,   // replace with the desired updated value
-//       keterangan: 'Updated Keterangan',
-//     },
-//     {
-//       gambar_tiket: '123.jpg', 
-//       jenis_tiket: 'bioskop', 
-//       harga: 50000, 
-//       keterangan: '',
-//       stok: 2,
-//     },
-//     {
-//       gambar_tiket: '', 
-//       jenis_tiket: 'kereta api', 
-//       harga: 100000, 
-//       keterangan: '/',
-//       stok: 3,
-//     },
-//     {
-//       gambar_tiket: 'abc.png', 
-//       jenis_tiket: '123', 
-//       harga: 150000, 
-//       keterangan: '?',
-//       stok: 3,
-//     },
-//     {
-//       gambar_tiket: 'tiket.pdf', 
-//       jenis_tiket: 'pesawat', 
-//       harga: 1000000, 
-//       keterangan: 'Jakarta - Denpasar',
-//       stok: 4,
-//     },
-//     {
-//       gambar_tiket: '{}', 
-//       jenis_tiket: '()', 
-//       harga: 100000, 
-//       keterangan: ';',
-//       stok: 4,
-//     },
-//     {
-//       gambar_tiket: '????.png', 
-//       jenis_tiket: '????????', 
-//       harga: 100000, 
-//       keterangan: '????',
-//       stok: 9,
-//     },
-//     {
-//       gambar_tiket: 'tiket123.jpg', 
-//       jenis_tiket: 'bioskop', 
-//       harga: 125000, 
-//       keterangan: 'Film Spiderman',
-//       stok: 0,
-//     },
-//     {
-//       gambar_tiket: '', 
-//       jenis_tiket: '', 
-//       harga: 120000, 
-//       keterangan: '',
-//       stok: 11,
-//     },
-//     // Add more test cases as needed
-//   ];
-
-//   testCases.forEach((updateData, index) => {
-//     it(`should update an article with test case ${index + 1}`, async () => {
-//       try {
-//         const response = await axios.put(`http://localhost:3005/api/updatetiket/${tiketIdToUpdate}`, updateData);
-
-//         assert.strictEqual(response.status, 200);
-//         assert.ok(response.data); // Ensure response.data is not undefined
-
-//         console.log(`Ticket updated successfully with test case ${index + 1}:`, response.data);
-//       } catch (error) {
-//         console.error(`Error updating Tiket with test case ${index + 1}:`, error.message);
-//         if (error.response) {
-//           console.error('Server responded with:', error.response.status, error.response.data);
-//         }
-
-//         throw error;
-//       }
-//     });
-//   });
-// });
-
+ 
 
 // Update data 
 describe('Update Tiket API Test', () => {
@@ -368,7 +277,7 @@ describe('Update Tiket API Test', () => {
 describe('Delete Tiket API Test', () => {
   it('should delete an article and return status code 200', async () => {
     // Assume you have a test article ID, replace it with an actual ID from your database
-    const tiketIdToDelete = 21; // Replace with a valid article ID
+    const tiketIdToDelete = 68; // Replace with a valid article ID
 
     // Make the DELETE request
     try {
@@ -388,10 +297,3 @@ describe('Delete Tiket API Test', () => {
   });
 });
 
-//       console.log('Tiket deleted successfully:', response.data);
-//     } catch (error) {
-//       console.error('Error deleting Tiket:', error.message);
-//       throw error;
-//     }
-//   });
-    

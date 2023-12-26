@@ -28,10 +28,10 @@ describe('API Test', () => {
 
 describe('Delete Detail Pesanan API Test', () => {
   it('should delete an Detail Pesanan and return status code 200', async () => {
-    const pesanandetailIdToDelete = 111; 
+    const pesanandetailIdToDelete = 131; 
 
     try {
-      const response = await axios.delete('http://localhost:3008/api/deletepesanandetail', {
+      const response = await axios.delete(' ', {
         data: { id:pesanandetailIdToDelete },
       });
 

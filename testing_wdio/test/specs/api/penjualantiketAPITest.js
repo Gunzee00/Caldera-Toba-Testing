@@ -12,7 +12,7 @@ describe('API Test', () => {
 
   it('should return status code 200', async function () {
     try {
-      const response = await axios.get('http://localhost:3009/api/readpenjualantiket');
+      const response = await axios.get('A');
 
       assert.strictEqual(response.status, 200);
       console.log('Data berhasil ditampilkan:', response.data);
@@ -28,7 +28,7 @@ describe('API Test', () => {
 
 describe('Delete Penjualan Tiket API Test', () => {
   it('should delete an article and return status code 200', async () => {
-    const penjualantiketIdToDelete = 4; 
+    const penjualantiketIdToDelete = 18; 
 
     try {
       const response = await axios.delete('http://localhost:3009/api/deletepenjualantiket', {
