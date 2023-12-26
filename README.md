@@ -6,6 +6,9 @@ import database yang telah di sediakan
 untuk run:php artisan serve
 
 Penggunaan API
-import database sql yang tersedia pada folder API. Penamaan database adalah api-ppl
+
+Import database sql yang tersedia pada folder API. 
+
+Penamaan database adalah api-ppl
 setiap folder untuk run server menggunakan perintah npm run start
 
