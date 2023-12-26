@@ -37,9 +37,9 @@ describe('Delete Detail Pesanan API Test', () => {
 
       assert.strictEqual(response.status, 200);
       assert.ok(response.data); 
-      console.log('Article deleted successfully:', response.data);
+      console.log('Data berhasil dihapus:', response.data);
     } catch (error) {
-      console.error('Error deleting article:', error.message);
+      console.error('Data gagal dihapus:', error.message);
       throw error;
     }
   });
