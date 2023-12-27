@@ -6,31 +6,32 @@ describe('Laravel Project Testing - Order Page', () => {
         expect(currentUrl).toBe('http://127.0.0.1:8000/home');
     });
 
-    it('should navigate back to the list menu page when clicking the "Kembali" button', async () => {
-        const initialOrderUrl = 'http://127.0.0.1:8000/pesanan';
+    it('should navigate to the next page of the order using page link', async () => {
+        const initialOrderUrl = 'http://127.0.0.1:8000/pesanan?page=1';
 
         // Login is now part of the test suite, so you don't need to call it again here
 
-        // Navigate to the initial order URL
+        // Navigate to the initial URL (order page)
         await browser.url(initialOrderUrl);
 
-        // Check if there is a "Kembali" button on the order page
-        const backButton = await $('a[href^="http://127.0.0.1:8000/list-menu"]');
-        if (backButton) {
-            // Click the "Kembali" button
-            await backButton.click();
+        // Click the next page link if available
+        const nextPageLink = await $('.page-link=2');
+        if (nextPageLink) {
+            await nextPageLink.click();
 
-            // Define the expected URL for the list menu page
-            const expectedListMenuUrl = 'http://127.0.0.1:8000/list-menu';
+            // Define the expected URL for the next page
+            const expectedNextPageUrl = 'http://127.0.0.1:8000/pesanan?page=2';
 
-            // Check if the browser URL matches the expected URL after clicking the "Kembali" button
-            const currentUrl = await browser.getUrl();
-            expect(currentUrl).toBe(expectedListMenuUrl);
+            // Check if the browser URL matches the expected URL after clicking the page link
+            await expect(browser).toHaveUrl(expectedNextPageUrl);
 
-            // Pause for 15 seconds (optional)
-            await pauseFor15Seconds();
+            // Optionally, add further validation for the content or behavior after clicking the page link
+            // ...
+
+            // Pause for 5 seconds (optional)
+            await pauseFor5Seconds();
         } else {
-            console.log('Kembali button not found on the order page.');
+            console.log('Next page link not found.');
         }
     });
 });
@@ -38,24 +39,20 @@ describe('Laravel Project Testing - Order Page', () => {
 async function testLogin(email, password, expectedUrl) {
     // Mengunjungi halaman web
     await browser.url('http://127.0.0.1:8000/login');
-
+  
     // Mengisi formulir login
     const emailInput = await $('#email');
     const passwordInput = await $('#password');
-
+  
     await emailInput.setValue(email);
     await passwordInput.setValue(password);
-
+  
     const loginButton = await $('button[type="submit"]');
     await loginButton.click();
-
+  
     await expect(browser).toHaveUrl(expectedUrl);
 }
 
 async function pauseFor5Seconds() {
     await browser.pause(5000); // Pause for 5 seconds
-}
-
-async function pauseFor15Seconds() {
-    await browser.pause(15000); // Pause for 15 seconds
 }

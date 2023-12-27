@@ -6,7 +6,11 @@ describe('My Login admin application', () => {
     it('should login with valid credentials', async () => {
         await LoginPage.open();
         await LoginPage.login('admin@gmail.com', '12345678');
+
+        const currentUrl = await browser.getUrl();
+        expect(currentUrl).toBe('http://127.0.0.1:8000/home');
     });
+
     it('harus mengisi data kamar dengan benar', async () => {
         await browser.url('http://127.0.0.1:8000/show-kamar');
     

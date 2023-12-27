@@ -6,7 +6,7 @@ describe('My Login application', () => {
     it('should login with valid credentials', async () => {
         await LoginPage.open()
 
-        await LoginPage.login('admin@gmail.com', '12345678')
+        await LoginPage.login('yohannasihotang@gmail.com', '12345678')
         // await expect(SecurePage.flashAlert).toBeExisting()
         // await expect(SecurePage.flashAlert).toHaveTextContaining(
         //     'You logged into a secure area!')

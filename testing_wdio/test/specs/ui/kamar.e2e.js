@@ -7,10 +7,10 @@ describe('Melihat deskripsi kamar', () => {
         await LoginPage.open()
 
         await LoginPage.login('yohannasihotang27@gmail.com', '12345678')
-        // await expect(SecurePage.flashAlert).toBeExisting()
-        // await expect(SecurePage.flashAlert).toHaveTextContaining(
-        //     'You logged into a secure area!')
-    })
+        
+        const currentUrl = await browser.getUrl();
+        expect(currentUrl).toBe('http://127.0.0.1:8000/home');
+    });
     //melihat deskripsi kamar
     it('melihat deskripsi kamar', async () => {
         // Navigate to your application's URL

@@ -1,4 +1,4 @@
-export const config = {
+exports.config = {
     //
     // ====================
     // Runner Configuration
@@ -22,17 +22,13 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        //all
-<<<<<<< HEAD
-        './test/specs/ui/pesanan1Test.js'
-=======
-        // './test/specs/ui/galeriTest.js'
->>>>>>> b20b0a775313de29cc6a04fb4077900ba56b2930
-        //ui login
-        // './test/specs/ui/loginTest.spec.js',
-        //ui Tiket User
-        './test/specs/ui/registrasi.e2e.js',
-        // './test/specs/api/artikelAPITest.spec.js'
+        './test/specs/**/upload2Test.js'
+
+        //ubah tiket
+        // './test/specs/**/tiket1adminTest.js'
+
+        //tambah tiket
+        // './test/specs/**/tiket2adminTest.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -95,7 +91,7 @@ export const config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'http://127.0.0.1:800/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -111,8 +107,8 @@ export const config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [],
-    //
+    services: ['vscode'],
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -134,11 +130,7 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec',['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: false,
-        disableWebdriverScreenshotsReporting: false,
-    }]],
+    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -241,8 +233,11 @@ export const config = {
      * @param {boolean} result.passed    true if test has passed, otherwise false
      * @param {object}  result.retries   information about spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-    // afterTest: function(test, context, { error, result, duration, passed, retries }) {
-    // },
+    afterTest: async function(test, context, { error, result, duration, passed, retries }) {
+        if (!passed) {
+            await browser.takeScreenshot();
+        }
+    },
 
 
     /**
